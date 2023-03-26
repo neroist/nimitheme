@@ -1,5 +1,6 @@
 import nimitheme/highlight_js
 import nimitheme/dark_reader
+import nimitheme/downstyler
 import nimitheme/markdown
 import nimitheme/nimibujo
 import nimitheme/a11yana
@@ -39,5 +40,6 @@ export holiday
 export a11yana
 export nimibujo
 export markdown
+export downstyler
 export dark_reader
 export highlight_js
