@@ -52,6 +52,7 @@ Currently supports the following themes:
   - [w3.css](https://www.w3schools.com/w3css/defaulT.asp)
   - [W3c Core Styles](https://www.w3.org/StyleSheets/Core/Overview)
   - [writ.css](https://writ.cmcenroe.me/)
+  - [YoRHa](https://github.com/metakirby5/yorha)
 
 In addition, support for [Dark Reader](https://github.com/darkreader/darkreader) and
 [highlight.js](https://highlightjs.org/) are available.
