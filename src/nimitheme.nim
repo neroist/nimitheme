@@ -7,6 +7,7 @@ import nimitheme/no_class
 import nimitheme/a11yana
 import nimitheme/holiday
 import nimitheme/bahunya
+import nimitheme/mercury
 import nimitheme/sakura
 import nimitheme/simple
 import nimitheme/tacit
@@ -38,6 +39,7 @@ export style
 export tacit
 export simple
 export sakura
+export mercury
 export bahunya
 export holiday
 export a11yana
