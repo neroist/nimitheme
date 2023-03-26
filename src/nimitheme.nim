@@ -1,3 +1,4 @@
+import nimitheme/github_markdown
 import nimitheme/highlight_js
 import nimitheme/dark_reader
 import nimitheme/downstyler
@@ -57,3 +58,4 @@ export markdown
 export downstyler
 export dark_reader
 export highlight_js
+export github_markdown
