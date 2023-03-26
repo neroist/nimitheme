@@ -4,7 +4,7 @@ import nimib
 when defined(readme):
   nbInitMd
 else:
-  nbInit(useAwsmBigStone)
+  nbInit(useBare)
 
 nbText: """
 # nimitheme
