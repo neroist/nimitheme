@@ -49,7 +49,7 @@ In addition, support for [Dark Reader](https://github.com/darkreader/darkreader)
 Execute this command in a terminal or shell:
 
 ```sh
-nimble install https://github.com/neroist/themeib
+nimble install nimitheme
 ```
 
 ## Usage
