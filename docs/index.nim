@@ -6,6 +6,8 @@ when defined(readme):
 else:
   nbInit(useAwsmBigStone)
 
+nb.title = "Nimitheme Docs"
+
 nbText: """
 # nimitheme
 """
