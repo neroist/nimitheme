@@ -29,9 +29,12 @@ jobs:
 
       - name: Install nimitheme
         run: nimble install https://github.com/neroist/nimitheme -y
+        
+      - name: Build readme
+        run: nimble readme
 
-      - name: Generate documentation
-        run: nimble index
+      - name: Generate html documentation
+        run: nimble docs
 
       - name: Deploy to GitHub Pages
         if: success()
