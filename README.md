@@ -1,6 +1,12 @@
 
 # nimitheme
 
+
+![nimitheme presenation](https://raw.githubusercontent.com/neroist/nimitheme/main/docs/images/image.png)
+
+
+
+
 > *Make nimib look **beautiful** with nimitheme*
 
 Nimitheme is a Nimble package that provides additional themes for [nimib](https://github.com/pietroppeter/nimib).
