@@ -5,7 +5,7 @@ A Nimble package that provides additional themes for [nimib](https://github.com/
 Currently supports [a11yana](https://a11yana.com/), [awsm](https://igoradamenko.github.io/awsm.css/), [bahunya](https://hakanalpay.com/bahunya/), 
 [holiday.css](https://holidaycss.js.org/), [markdown](https://markdowncss.github.io/), [marx](https://github.com/mblode/marx), 
 [mvp.css](https://andybrewer.github.io/mvp/), [new.css](https://newcss.net/), [pico](https://picocss.com/), [sakura](https://github.com/oxalorg/sakura), 
-[simple](https://simplecss.org/), style.css, and [w3.css](https://www.w3schools.com/w3css/defaulT.asp).
+[simple](https://simplecss.org/), style.css, [tacit.css](https://yegor256.github.io/tacit/), and [w3.css](https://www.w3schools.com/w3css/defaulT.asp).
 In addition, support for [Dark Reader](https://github.com/darkreader/darkreader) and [highlight.js](https://highlightjs.org/) are available.
 
 ## Installation
