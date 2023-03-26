@@ -1,0 +1,42 @@
+name: generate-doc
+run-name: Generate documentation
+
+on: 
+  push:
+    branches:
+      - "main"
+
+    paths:
+      - "nimitheme.nimble"
+
+      - "docs/**"
+      - "src/**"
+      - ".github/workflows/**"
+
+jobs:
+  generate-doc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Nim
+        uses: jiro4989/setup-nim-action@v1
+        with:
+          nim-version: stable
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install nimitheme
+        run: nimble install https://github.com/neroist/nimitheme
+
+      - name: Generate documentation
+        run: nimble index
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          build_dir: docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
