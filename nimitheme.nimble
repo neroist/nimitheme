@@ -2,7 +2,7 @@
 
 version       = "0.1.0"
 author        = "Jasmine"
-description   = "Additional themes for nimib"
+description   = "Make nimib look beautiful with nimitheme"
 license       = "MIT"
 srcDir        = "src"
 
