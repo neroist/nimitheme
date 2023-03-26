@@ -27,7 +27,7 @@ proc useSakura*(doc: var NbDoc) =
 proc useSakuraDarkSolarized*(doc: var NbDoc) = 
   doc.useDefault()
   doc.darkMode()
-  doc.context["highlight"] = """<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/solarized-dark.min.css">"""
+  doc.context["highlight"] = solarizedDark
   doc.context["stylesheet"] = sakuraDarkSolarized
   doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
 
