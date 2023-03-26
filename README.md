@@ -68,7 +68,7 @@ nb.highlight = materialPalenight
 
 
 
-*All* highlight.js themes are available (see [`highlight_js.nim`](src/themeib/highlight_js.nim)).
+*All* highlight.js themes are available (see [`highlight_js.nim`](src/nimitheme/highlight_js.nim)).
 
 For themes that have the same name as a base16 theme, the base16 theme's name is postfixed with a `_base16` affix.
 
