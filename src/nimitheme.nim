@@ -6,6 +6,7 @@ import nimitheme/holiday
 import nimitheme/bahunya
 import nimitheme/sakura
 import nimitheme/simple
+import nimitheme/tacit
 import nimitheme/style
 import nimitheme/awsm
 import nimitheme/marx
@@ -21,6 +22,7 @@ export pico
 export marx
 export awsm
 export style
+export tacit
 export simple
 export sakura
 export bahunya
