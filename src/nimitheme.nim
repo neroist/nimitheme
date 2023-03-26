@@ -3,6 +3,7 @@ import nimitheme/dark_reader
 import nimitheme/downstyler
 import nimitheme/markdown
 import nimitheme/nimibujo
+import nimitheme/no_class
 import nimitheme/a11yana
 import nimitheme/holiday
 import nimitheme/bahunya
@@ -40,6 +41,7 @@ export sakura
 export bahunya
 export holiday
 export a11yana
+export no_class
 export nimibujo
 export markdown
 export downstyler
