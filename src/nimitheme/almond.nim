@@ -1,0 +1,14 @@
+import nimib/themes
+import nimib
+
+const
+  almond* = """<link rel="stylesheet" href="https://unpkg.com/almond.css@latest/dist/almond.min.css" />"""
+  almondLite* = """<link rel="stylesheet" href="https://unpkg.com/almond.css@latest/dist/almond.lite.min.css" />"""
+
+proc useAlmond*(doc: var NbDoc) = 
+  doc.useDefault()
+  doc.context["stylesheet"] = almond
+
+proc useAlmondLite*(doc: var NbDoc) = 
+  doc.useDefault()
+  doc.context["stylesheet"] = almondLite

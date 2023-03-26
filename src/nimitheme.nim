@@ -10,6 +10,7 @@ import nimitheme/bahunya
 import nimitheme/mercury
 import nimitheme/sakura
 import nimitheme/simple
+import nimitheme/almond
 import nimitheme/tacit
 import nimitheme/style
 import nimitheme/attri
@@ -39,6 +40,7 @@ export axist
 export attri
 export style
 export tacit
+export almond
 export simple
 export sakura
 export mercury
