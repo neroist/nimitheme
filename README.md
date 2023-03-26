@@ -1,4 +1,4 @@
-# themeib 
+# nimithemes 
 A Nimble package that provides additional themes for [nimib](https://github.com/pietroppeter/nimib). 
 Currently supports [a11yana](https://a11yana.com/), [awsm](https://igoradamenko.github.io/awsm.css/), [bahunya](https://hakanalpay.com/bahunya/), 
 [holiday.css](https://holidaycss.js.org/), [markdown](https://markdowncss.github.io/), [marx](https://github.com/mblode/marx), 
