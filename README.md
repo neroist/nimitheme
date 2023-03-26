@@ -41,7 +41,7 @@ nb.useDarkReader()
 ### Highlight.js support
 You can easily set the highlight.js code theme using `highlight=`. For example, you can do something like this:
 
-```
+```nim
 nb.highlight = materialPalenight
 ```
 
