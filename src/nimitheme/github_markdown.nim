@@ -2,9 +2,9 @@ import nimib/themes
 import nimib
 
 const
-  githubMarkdown* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown.css">"""
-  githubMarkdownDark* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown-dark.css">"""
-  githubMarkdownLight* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown-light.css">"""
+  githubMarkdown* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown.css" />"""
+  githubMarkdownDark* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown-dark.css" />"""
+  githubMarkdownLight* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown-light.css" />"""
   githubMarkdownDocument* = """
 <!DOCTYPE html>
 <html lang="en-us">

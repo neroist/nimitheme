@@ -4,15 +4,15 @@ import nimib
 import highlight_js
 
 const
-  awsm* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm.min.css">"""
-  awsmWhite* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_white.min.css">"""
-  awsmGondola* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_gondola.min.css">"""
-  awsmMischka* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_mischka.min.css">"""
-  awsmBigStone* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_big-stone.min.css">"""
-  awsmBlack* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_black.min.css">"""
-  awsmTasman* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_tasman.min.css">"""
-  awsmPastelPink* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_pastel-pink.min.css">"""
-  awsmPearlLusta* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_pearl-lusta.min.css">"""
+  awsm* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm.min.css" />"""
+  awsmWhite* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_white.min.css" />"""
+  awsmGondola* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_gondola.min.css" />"""
+  awsmMischka* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_mischka.min.css" />"""
+  awsmBigStone* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_big-stone.min.css" />"""
+  awsmBlack* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_black.min.css" />"""
+  awsmTasman* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_tasman.min.css" />"""
+  awsmPastelPink* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_pastel-pink.min.css" />"""
+  awsmPearlLusta* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_pearl-lusta.min.css" />"""
 
 proc useAwsm*(doc: var NbDoc) =
   doc.useDefault()

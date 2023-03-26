@@ -4,12 +4,12 @@ import nimib
 import highlight_js
 
 const
-  basic* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/basic.min.css">"""
-  basicMobile* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/mobile.css">"""
-  basicDarkClassic* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/dark-classic.css">"""
-  basicDarkOrange* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/dark-orange.css">"""
-  basicLightAquamarine* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/light-aquamarine.css">"""
-  basicLightClassic* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/light-classic.css">"""
+  basic* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/basic.min.css" />"""
+  basicMobile* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/mobile.css" />"""
+  basicDarkClassic* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/dark-classic.css" />"""
+  basicDarkOrange* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/dark-orange.css" />"""
+  basicLightAquamarine* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/light-aquamarine.css" />"""
+  basicLightClassic* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/light-classic.css" />"""
   basicStyle* = """
 <style>
   main, footer {

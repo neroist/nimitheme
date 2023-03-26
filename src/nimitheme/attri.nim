@@ -4,11 +4,11 @@ import nimib
 import highlight_js
 
 const
-  attriBrightLightGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/brightlight-green.css">"""
-  attriDarkFairyPink* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/darkfairy-pink.css">"""
-  attriDarkForestGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/darkforest-green.css">"""
-  attriLightFairyPink* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/lightfairy-pink.css">"""
-  attriMidnightGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/midnight-green.css">"""
+  attriBrightLightGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/brightlight-green.css" />"""
+  attriDarkFairyPink* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/darkfairy-pink.css" />"""
+  attriDarkForestGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/darkforest-green.css" />"""
+  attriLightFairyPink* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/lightfairy-pink.css" />"""
+  attriMidnightGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/midnight-green.css" />"""
   attriStyle* = """
 <style>
 pre {

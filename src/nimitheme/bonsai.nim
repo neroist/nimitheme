@@ -2,7 +2,7 @@ import nimib/themes
 import nimib
 
 const
-  bonsai* = """<link href="https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css" rel="stylesheet">"""
+  bonsai* = """<link href="https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css" rel="stylesheet" />"""
   bonsaiStyle* = """
 <style>
   footer {
