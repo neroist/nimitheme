@@ -1,7 +1,7 @@
 
 # nimitheme
 
-> Make nimib look *beautiful* with nimitheme
+> *Make nimib look **beautiful** with nimitheme*
 
 Nimitheme is a Nimble package that provides additional themes for [nimib](https://github.com/pietroppeter/nimib).
 Currently supports the following themes:
