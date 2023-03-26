@@ -10,10 +10,10 @@ srcDir        = "src"
 # Tasks
 
 task readme, "Build readme for nimitheme":
-  exec "nim c -d:readme -r doc/index.nim"
+  exec "nim r -d:readme docs/index.nim"
 
-task index, "Build index.html for nimitheme":
-  exec "nim c -r doc/index.nim"
+task docs, "Build html docs for nimitheme":
+  exec "nim r docs/index.nim"
 
 # Dependencies
 
