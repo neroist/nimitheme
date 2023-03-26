@@ -20,6 +20,7 @@ import nimitheme/awsm
 import nimitheme/marx
 import nimitheme/pico
 import nimitheme/bare
+import nimitheme/writ
 import nimitheme/new
 import nimitheme/mvp
 import nimitheme/w3
@@ -27,6 +28,7 @@ import nimitheme/w3
 export w3
 export mvp
 export new
+export writ
 export bare
 export pico
 export marx
