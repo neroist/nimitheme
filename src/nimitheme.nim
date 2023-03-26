@@ -13,6 +13,7 @@ import nimitheme/style
 import nimitheme/attri
 import nimitheme/axist
 import nimitheme/basic
+import nimitheme/latex
 import nimitheme/awsm
 import nimitheme/marx
 import nimitheme/pico
@@ -28,6 +29,7 @@ export bare
 export pico
 export marx
 export awsm
+export latex
 export basic
 export axist
 export attri
