@@ -28,7 +28,7 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install nimitheme
-        run: nimble install https://github.com/neroist/nimitheme
+        run: nimble install https://github.com/neroist/nimitheme -y
 
       - name: Generate documentation
         run: nimble index
