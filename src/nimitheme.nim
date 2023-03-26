@@ -1,6 +1,7 @@
 import nimitheme/highlight_js
 import nimitheme/dark_reader
 import nimitheme/markdown
+import nimitheme/nimibujo
 import nimitheme/a11yana
 import nimitheme/holiday
 import nimitheme/bahunya
@@ -28,6 +29,7 @@ export sakura
 export bahunya
 export holiday
 export a11yana
+export nimibujo
 export markdown
 export dark_reader
 export highlight_js
