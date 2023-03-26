@@ -1,8 +1,9 @@
 # themeib
-A Nim package that provides additional themes for nimib. Currently supports [a11yana](https://a11yana.com/), [awsm](https://igoradamenko.github.io/awsm.css/), 
-[bahunya](https://hakanalpay.com/bahunya/), [holiday.css](https://holidaycss.js.org/), [markdown](https://markdowncss.github.io/), 
-[marx](https://github.com/mblode/marx), [mvp.css](https://andybrewer.github.io/mvp/), [new.css](https://newcss.net/), [pico](https://picocss.com/), 
-[sakura](https://github.com/oxalorg/sakura), [simple](https://simplecss.org/), style.css, and [w3.css](https://www.w3schools.com/w3css/defaulT.asp).
+A Nim package that provides additional themes for [nimib](https://github.com/pietroppeter/nimib). 
+Currently supports [a11yana](https://a11yana.com/), [awsm](https://igoradamenko.github.io/awsm.css/), [bahunya](https://hakanalpay.com/bahunya/), 
+[holiday.css](https://holidaycss.js.org/), [markdown](https://markdowncss.github.io/), [marx](https://github.com/mblode/marx), 
+[mvp.css](https://andybrewer.github.io/mvp/), [new.css](https://newcss.net/), [pico](https://picocss.com/), [sakura](https://github.com/oxalorg/sakura), 
+[simple](https://simplecss.org/), style.css, and [w3.css](https://www.w3schools.com/w3css/defaulT.asp).
 In addition, support for Dark Reader and highlight.js are available.
 
 ## Installation
@@ -27,9 +28,26 @@ or call the function directly:
 nbInit
 
 nb.useAwsmBigStone()
-
 ...
 ```
+
+### Dark Reader Support
+You can enable Dark Reader in your nimib document by calling `useDarkReader` on the `nb` variable injected by `nbInit`, like so:
+
+```nim
+nb.useDarkReader()
+```
+
+### Highlight.js support
+You can easily set the highlight.js code theme using `highlight=`. For example, you can do something like this:
+
+```
+nb.highlight = materialPalenight
+```
+
+*All* highlight.js themes are available and supported (see [`highlight_js.nim`](src/themeib/highlight_js.nim)).
+
+For themes that have the same name as a base16 theme, the base16 theme's name is postfixed with a `_base16` affix.
 
 ## License
 
