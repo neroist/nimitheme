@@ -1,8 +1,10 @@
 
 # nimitheme
 
-A Nimble package that provides additional themes for [nimib](https://github.com/pietroppeter/nimib).
-Currently supports:
+> Make nimib look *beautiful* with nimitheme
+
+Nimitheme is a Nimble package that provides additional themes for [nimib](https://github.com/pietroppeter/nimib).
+Currently supports the following themes:
   - [a11yana](https://a11yana.com/)
   - [attri](https://raj457036.github.io/attriCSS/)
   - [awsm](https://igoradamenko.github.io/awsm.css/)
@@ -28,7 +30,7 @@ Currently supports:
   - [w3.css](https://www.w3schools.com/w3css/defaulT.asp)
   - [writ.css](https://writ.cmcenroe.me/)
 
- In addition, support for [Dark Reader](https://github.com/darkreader/darkreader) and
+In addition, support for [Dark Reader](https://github.com/darkreader/darkreader) and
 [highlight.js](https://highlightjs.org/) are available.
 
 ## Installation
@@ -91,7 +93,7 @@ nb.highlight = materialPalenight
 
 
 
-*All* highlight.js themes are available (see [`highlight_js.nim`](src/nimitheme/highlight_js.nim)).
+*All* highlight.js themes are available (see [`highlight_js.nim`](https://github.com/neroist/nimitheme/blob/main/src/nimitheme/highlight_js.nim)).
 
 For themes that have the same name as a base16 theme, the base16 theme's name is postfixed with `_base16`.
 
