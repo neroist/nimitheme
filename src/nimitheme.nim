@@ -10,6 +10,7 @@ import nimitheme/simple
 import nimitheme/tacit
 import nimitheme/style
 import nimitheme/attri
+import nimitheme/axist
 import nimitheme/awsm
 import nimitheme/marx
 import nimitheme/pico
@@ -23,6 +24,7 @@ export new
 export pico
 export marx
 export awsm
+export axist
 export attri
 export style
 export tacit
