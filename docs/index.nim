@@ -84,7 +84,7 @@ nbCodeSkip:
   nb.highlight = materialPalenight
 
 nbText: """
-*All* highlight.js themes are available (see [`highlight_js.nim`](src/nimitheme/highlight_js.nim)).
+*All* highlight.js themes are available (see [`highlight_js.nim`](https://github.com/neroist/nimitheme/blob/main/src/nimitheme/highlight_js.nim)).
 
 For themes that have the same name as a base16 theme, the base16 theme's name is postfixed with `_base16`.
 
