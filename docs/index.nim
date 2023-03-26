@@ -6,6 +6,7 @@ when defined(readme):
 else:
   nbInit(useAwsmBigStone)
 
+nb.context["path_to_root"] = "."
 nb.title = "Nimitheme Docs"
 
 nbText: """
