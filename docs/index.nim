@@ -13,7 +13,7 @@ nbText: """
 nbImage(
   "https://raw.githubusercontent.com/neroist/nimitheme/main/docs/images/image.png", 
   "", 
-  "nimitheme presenation"
+  "nimitheme presenation image"
 )
 
 nbText: """
