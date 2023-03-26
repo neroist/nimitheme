@@ -2,7 +2,7 @@
 # nimitheme
 
 
-![nimitheme presenation](https://raw.githubusercontent.com/neroist/nimitheme/main/docs/images/image.png)
+![nimitheme presenation image](https://raw.githubusercontent.com/neroist/nimitheme/main/docs/images/image.png)
 
 
 
