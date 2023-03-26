@@ -27,9 +27,11 @@ import nimitheme/writ
 import nimitheme/new
 import nimitheme/mvp
 import nimitheme/ads
+import nimitheme/w3c
 import nimitheme/w3
 
 export w3
+export w3c
 export ads
 export mvp
 export new
