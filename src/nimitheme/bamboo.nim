@@ -19,7 +19,7 @@ const
   </style>
 """
 
-proc useBamboo*(doc: var NbDoc) {.deprecated: "Either use `useBambooDark` or `useBambooLight`".} = 
+proc useBamboo*(doc: var NbDoc) = 
   doc.useDefault()
   doc.context["stylesheet"] = bamboo
   doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & bambooStyle
