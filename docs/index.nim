@@ -15,7 +15,7 @@ nbText: """
 
 nbImage(
   "https://raw.githubusercontent.com/neroist/nimitheme/main/docs/images/nimitheme.png", 
-  "", 
+  "", # Caption is the blockquote below
   "nimitheme presentation image"
 )
 
