@@ -8,6 +8,10 @@ const
     footer {
       padding-top: 15px;
     }
+
+    pre {
+      padding: 0px;
+    }
   </style>
 """
 
