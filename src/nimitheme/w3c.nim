@@ -7,7 +7,7 @@ const
   w3cChocolate* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Chocolate">"""
   w3cMidnight* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Midnight">"""
   w3cModernist* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Modernist">"""
-  w3cOldstyle* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Oldstyle">"""
+  w3cOldStyle* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Oldstyle">"""
   w3cSteely* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Steely">"""
   w3cSwiss* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Swiss">"""
   w3cTraditional* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Traditional">"""
@@ -27,7 +27,7 @@ proc useW3cModernist*(doc: var NbDoc) =
   doc.useDefault()
   doc.context["stylesheet"] = w3cModernist
 
-proc useW3cOldstyle*(doc: var NbDoc) = 
+proc useW3cOldStyle*(doc: var NbDoc) = 
   doc.useDefault()
   doc.context["stylesheet"] = w3cOldstyle
 
