@@ -13,6 +13,7 @@ import nimitheme/sakura
 import nimitheme/simple
 import nimitheme/almond
 import nimitheme/bonsai
+import nimitheme/bamboo
 import nimitheme/tacit
 import nimitheme/style
 import nimitheme/attri
@@ -48,6 +49,7 @@ export axist
 export attri
 export style
 export tacit
+export bamboo
 export bonsai
 export almond
 export simple
