@@ -18,4 +18,4 @@ task docs, "Build html docs for nimitheme":
 # Dependencies
 
 requires "nim >= 1.4.0"
-requires "nimib >= 3.9.0"
+requires "nimib"
