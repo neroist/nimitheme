@@ -9,7 +9,7 @@ on:
     paths:
       - "nimitheme.nimble"
 
-      - "docs/**"
+      - "docsrc/**"
       - "src/**"
       - ".github/workflows/**"
 
