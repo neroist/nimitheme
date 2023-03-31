@@ -111,5 +111,5 @@ For themes that have the same name as a base16 theme, the base16 theme's name is
 
 ## License
 
-This project is licensed under the MIT license.
+This project and WebUI is licensed under the GPL-2.0 license.
 
