@@ -114,7 +114,5 @@ This project is licensed under the MIT license.
 
 when defined(readme):
   nb.filename = "README.md"
-else:
-  nb.filename = "docs/index.html"
 
 nbSave
