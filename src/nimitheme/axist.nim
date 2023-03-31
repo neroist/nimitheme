@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   axist* = """<link rel="stylesheet" href="https://unpkg.com/axist@latest/dist/axist.min.css" />"""
   axistStyle* = """
@@ -16,6 +18,4 @@ pre {
 """
 
 proc useAxist*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = axist
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & axistStyle
+  useStyle axist, axistStyle

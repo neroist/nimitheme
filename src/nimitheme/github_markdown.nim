@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   githubMarkdown* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown.css" />"""
   githubMarkdownDark* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css/github-markdown-dark.css" />"""
@@ -37,21 +39,14 @@ const
 """
 
 proc useGithubMarkdown*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = githubMarkDown
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & githubMarkdownStyle
+  useStyle githubMarkDown, githubMarkdownStyle
   doc.partials["document"] = githubMarkdownDocument
 
 
 proc useGithubMarkdownDark*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["stylesheet"] = githubMarkDownDark
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & githubMarkdownStyle
+  useStyle githubMarkDownDark, githubMarkdownStyle, useDarkMode = true
   doc.partials["document"] = githubMarkdownDocument
 
 proc useGithubMarkdownLight*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = githubMarkDownLight
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & githubMarkdownStyle
+  useStyle githubMarkDownLight, githubMarkdownStyle
   doc.partials["document"] = githubMarkdownDocument

@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   tacit* = """<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css"/>"""
   tacitStyle* = """
@@ -17,6 +19,4 @@ header div.nb-box {
 """
 
 proc useTacit*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = tacit
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & tacitStyle
+  useStyle tacit, tacitStyle

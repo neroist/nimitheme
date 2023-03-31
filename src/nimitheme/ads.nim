@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   adsGazette* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/dohliam/dropin-minimal-css/min/ads-gazette.min.css" />"""
   adsMedium* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/dohliam/dropin-minimal-css/min/ads-medium.min.css" />"""
@@ -15,19 +17,13 @@ const
 """
 
 proc useAdsGazette*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = adsGazette
+  useStyle adsGazette
 
 proc useAdsMedium*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = adsMedium
+  useStyle adsMedium
 
 proc useAdsNoteBook*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = adsNoteBook
+  useStyle adsNoteBook
 
 proc useAdsTufte*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = adsTufte
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & adsTufteStyle
-
+  useStyle adsTufte, adsTufteStyle

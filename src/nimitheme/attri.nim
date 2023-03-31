@@ -1,7 +1,8 @@
 import nimib/themes
 import nimib
 
-import highlight_js
+import ./highlight_js
+import ./utils
 
 const
   attriBrightLightGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/brightlight-green.css" />"""
@@ -26,31 +27,17 @@ main {
 """
 
 proc useAttriBrightLightGreen*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = attriBrightLightGreen
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & attriStyle
+  useStyle attriBrightLightGreen, attriStyle
 
 proc useAttriDarkFairyPink*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["stylesheet"] = attriDarkFairyPink
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & attriStyle
+  useStyle attriDarkFairyPink, attriStyle
 
 proc useAttriDarkForestGreen*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["highlight"] = greenScreen
-  doc.context["stylesheet"] = attriDarkForestGreen
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & attriStyle
+  doc.highlight = greenScreen
+  useStyle attriDarkForestGreen, attriStyle, useDarkMode = true
 
 proc useAttriLightFairyPink*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["highlight"] = horizonLight
-  doc.context["stylesheet"] = attriLightFairyPink
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & attriStyle
+  useStyle attriLightFairyPink, attriStyle
 
 proc useAttriMidnightGreen*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["stylesheet"] = attriMidnightGreen
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & attriStyle
+  useStyle attriMidnightGreen, attriStyle, useDarkMode = true

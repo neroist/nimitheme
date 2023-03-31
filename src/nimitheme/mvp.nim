@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const 
   mvp* = """<link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css">"""
   mvpStyle* = """
@@ -35,7 +37,5 @@ function toggleSourceDisplay() {
 </script>"""
 
 proc useMvp*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = mvp
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & mvpStyle
+  useStyle mvp, mvpStyle
   doc.partials["show_source_script"] = optOut(mvpShowSourceScript, "no_source")

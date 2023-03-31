@@ -2,6 +2,7 @@ import nimib/themes
 import nimib
 
 import highlight_js
+import ./utils
 
 const
   awsm* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm.min.css" />"""
@@ -15,50 +16,37 @@ const
   awsmPearlLusta* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_pearl-lusta.min.css" />"""
 
 proc useAwsm*(doc: var NbDoc) =
-  doc.useDefault()
-  doc.context["highlight"] = atelierSulphurpoolLight
-  doc.context["stylesheet"] = awsm
+  doc.highlight = atelierSulphurpoolLight
+  useStyle awsm
 
 proc useAwsmWhite*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["highlight"] = atelierSulphurpoolLight
-  doc.context["stylesheet"] = awsmWhite
+  doc.highlight = atelierSulphurpoolLight
+  useStyle awsmWhite
 
 proc useAwsmGondola*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["highlight"] = atelierDune
-  doc.context["stylesheet"] = awsmGondola
+  doc.highlight = atelierDune
+  useStyle awsmGondola, useDarkMode = true
 
 proc useAwsmMischka*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["highlight"] = tokyoNightLight
-  doc.context["stylesheet"] = awsmMischka
+  doc.highlight = tokyoNightLight
+  useStyle awsmMischka, useDarkMode = true
 
 proc useAwsmBigStone*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["highlight"] = tomorrowNightBlue
-  doc.context["stylesheet"] = awsmBigStone
+  doc.highlight = tomorrowNightBlue
+  useStyle awsmBigStone, useDarkMode = true
 
 proc useAwsmBlack*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["highlight"] = atelierPlateau
-  doc.context["stylesheet"] = awsmBlack
+  doc.highlight = atelierPlateau
+  useStyle awsmBlack, useDarkMode = true
 
 proc useAwsmTasman*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["highlight"] = equilibruimLight
-  doc.context["stylesheet"] = awsmTasman
+  doc.highlight = equilibruimLight
+  useStyle awsmTasman
 
 proc useAwsmPastelPink*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["highlight"] = horizonLight
-  doc.context["stylesheet"] = awsmPastelPink
+  doc.highlight = horizonLight
+  useStyle awsmPastelPink
 
 proc useAwsmPearlLusta*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["highlight"] = equilibruimGreyLight
-  doc.context["stylesheet"] = awsmPearlLusta
+  doc.highlight = equilibruimGreyLight
+  useStyle awsmPearlLusta

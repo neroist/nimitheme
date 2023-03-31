@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   bare* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/longsien/BareCSS/css/bare.min.css" />"""
   bareStyle* = """
@@ -21,6 +23,4 @@ const
 """
 
 proc useBare*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = bare
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & bareStyle
+  useStyle bare, bareStyle

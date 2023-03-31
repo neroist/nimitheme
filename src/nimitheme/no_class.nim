@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   noClass* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/davidpaulsson/no-class/docs/css/no-class.min.css">"""
   noClassStyle* = """
@@ -25,6 +27,4 @@ const
 """
 
 proc useNoClass*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = noClass
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & noClassStyle
+  useStyle noClass, noClassStyle
