@@ -3,7 +3,7 @@
 version       = "0.1.0"
 author        = "Jasmine"
 description   = "Make nimib look beautiful with nimitheme"
-license       = "MIT"
+license       = "GPL-2.0"
 srcDir        = "src"
 
 
