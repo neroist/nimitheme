@@ -1,6 +1,8 @@
 name: generate-doc
 run-name: Generate documentation
 
+on: [workflow_dispatch]
+
 #on: 
 #  push:
 #    branches:
