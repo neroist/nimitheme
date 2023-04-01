@@ -8,16 +8,16 @@ const
   mvpStyle* = """
 <style>
   hr {
-    margin-top: 15px !important;
-    margin-bottom: 15px !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   header {
-    padding: 15px !important;
+    padding: 15px;
   }
 
   main, footer {
-    padding-top: 0px !important;
+    padding-top: 0px;
   }
 
   section#source pre, section#source pre code {
