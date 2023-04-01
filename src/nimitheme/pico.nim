@@ -51,10 +51,10 @@ proc usePico*(doc: var NbDoc) =
   useStyle pico, picoStyle
 
 proc usePicoDark*(doc: var NbDoc) = 
-  useStyle pico, useDarkMode = true
+  useStyle pico, picoStyle, useDarkMode = true
   doc.highlight = solarizedDark
   doc.partials["document"] = picoDarkDocument
 
 proc usePicoLight*(doc: var NbDoc) = 
-  useStyle pico
+  useStyle pico, picoStyle
   doc.partials["document"] = picoLightDocument
