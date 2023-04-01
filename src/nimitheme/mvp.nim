@@ -19,23 +19,13 @@ const
   main, footer {
     padding-top: 0px !important;
   }
+
+  section#source pre, section#source pre code {
+    max-width: 100%;
+    padding: 16px;
+  }
 </style>
 """
-  mvpShowSourceScript = """<script>
-function toggleSourceDisplay() {
-  var btn = document.getElementById("show")
-  var source = document.getElementById("source");
-
-  if (btn.innerHTML == "Show Source") {
-    btn.innerHTML = "Hide Source";
-    source.style.display = "flex";
-  } else {
-    btn.innerHTML = "Show Source";
-    source.style.display = "none";
-  }
-}
-</script>"""
 
 proc useMvp*(doc: var NbDoc) = 
   useStyle mvp, mvpStyle
-  doc.partials["show_source_script"] = optOut(mvpShowSourceScript, "no_source")
