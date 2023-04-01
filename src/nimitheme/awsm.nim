@@ -16,24 +16,24 @@ const
   awsmPearlLusta* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/awsm.css/dist/awsm_theme_pearl-lusta.min.css" />"""
 
 proc useAwsm*(doc: var NbDoc) =
-  doc.highlight = atelierSulphurpoolLight
   useStyle awsm
+  doc.highlight = atelierSulphurpoolLight
 
 proc useAwsmWhite*(doc: var NbDoc) = 
-  doc.highlight = atelierSulphurpoolLight
   useStyle awsmWhite
+  doc.highlight = atelierSulphurpoolLight
 
 proc useAwsmGondola*(doc: var NbDoc) = 
-  doc.highlight = atelierDune
   useStyle awsmGondola, useDarkMode = true
+  doc.highlight = atelierDune
 
 proc useAwsmMischka*(doc: var NbDoc) = 
-  doc.highlight = tokyoNightLight
   useStyle awsmMischka, useDarkMode = true
+  doc.highlight = tokyoNightLight
 
 proc useAwsmBigStone*(doc: var NbDoc) = 
-  doc.highlight = tomorrowNightBlue
   useStyle awsmBigStone, useDarkMode = true
+  doc.highlight = tomorrowNightBlue
 
 proc useAwsmBlack*(doc: var NbDoc) = 
   doc.highlight = atelierPlateau

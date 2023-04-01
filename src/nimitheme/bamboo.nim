@@ -24,8 +24,8 @@ proc useBamboo*(doc: var NbDoc) =
   useStyle bamboo, bambooStyle
 
 proc useBambooDark*(doc: var NbDoc) = 
-  doc.highlight = codeschool
   useStyle bambooDark, bambooStyle, useDarkMode = true
+  doc.highlight = codeschool
 
 proc useBambooLight*(doc: var NbDoc) = 
   useStyle bambooLight, bambooStyle

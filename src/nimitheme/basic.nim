@@ -26,8 +26,8 @@ proc useBasic*(doc: var NbDoc) =
   useStyle [basic, basicMobile], basicStyle
 
 proc useBasicDarkClassic*(doc: var NbDoc) = 
-  doc.highlight = tomorrowNightBlue
   useStyle [basic, basicDarkClassic, basicMobile], basicStyle, useDarkMode = true
+  doc.highlight = tomorrowNightBlue
 
 proc useBasicDarkOrange*(doc: var NbDoc) = 
   useStyle [basic, basicDarkOrange, basicMobile], basicStyle, useDarkMode = true

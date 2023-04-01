@@ -33,8 +33,8 @@ proc useAttriDarkFairyPink*(doc: var NbDoc) =
   useStyle attriDarkFairyPink, attriStyle
 
 proc useAttriDarkForestGreen*(doc: var NbDoc) = 
-  doc.highlight = greenScreen
   useStyle attriDarkForestGreen, attriStyle, useDarkMode = true
+  doc.highlight = greenScreen
 
 proc useAttriLightFairyPink*(doc: var NbDoc) = 
   useStyle attriLightFairyPink, attriStyle
