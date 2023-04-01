@@ -18,6 +18,10 @@ const
   header {
     padding-top: 5px; 
   }
+
+  footer {
+    padding-bottom: 5px;
+  }
 </style>
 """
 
