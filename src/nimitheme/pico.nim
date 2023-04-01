@@ -20,6 +20,10 @@ const
   footer {
     padding-top: 0px !important;
   }
+
+  pre {
+    padding: 5px;
+  }
 </style>
 """
   picoLightDocument* = """
