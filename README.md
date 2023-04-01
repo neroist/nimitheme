@@ -42,6 +42,8 @@ Currently supports the following themes:
   - [writ.css](https://writ.cmcenroe.me/)
   - [YoRHa](https://github.com/metakirby5/yorha)
 
+You can view the *true* index of all themes available in nimitheme [here](https://neroist.github.io/nimitheme/themes).
+
 In addition, support for [Dark Reader](https://github.com/darkreader/darkreader) and
 [highlight.js](https://highlightjs.org/) are available.
 
@@ -112,4 +114,6 @@ For themes that have the same name as a base16 theme, the base16 theme's name is
 ## License
 
 This project is licensed under the MIT license.
+
+###### Made with Nim with ❤️
 

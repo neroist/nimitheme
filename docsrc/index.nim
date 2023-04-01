@@ -117,6 +117,6 @@ This project is licensed under the MIT license.
 """
 
 when defined(readme):
-  nb.filename = "README.md"
+  nb.filename = "../README.md"
 
 nbSave
