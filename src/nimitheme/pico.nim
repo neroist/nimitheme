@@ -14,11 +14,11 @@ const
   }
 
   header, footer {
-    padding: 15px !important;
+    padding: 15px;
   }
 
   footer {
-    padding-top: 0px !important;
+    padding-top: 0px;
   }
 
   pre {
