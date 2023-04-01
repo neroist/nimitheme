@@ -11,19 +11,19 @@ const
   attriLightFairyPink* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/lightfairy-pink.css" />"""
   attriMidnightGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/midnight-green.css" />"""
   attriStyle* = """
-<style>
-  pre {
-    background-color: inherit;
-  }
+  <style>
+    pre {
+      background-color: inherit;
+    }
 
-  header, section#source {
-    padding: 15px;
-  }
+    header, section#source {
+      padding: 15px;
+    }
 
-  main {
-    padding: 5px
-  }
-</style>
+    main {
+      padding: 5px
+    }
+  </style>
 """
 
 proc useAttriBrightLightGreen*(doc: var NbDoc) = 
