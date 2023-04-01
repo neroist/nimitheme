@@ -14,7 +14,10 @@ srcDir        = "src"
 task readme, "Build readme for nimitheme":
   exec "nim r -d:readme docsrc/index.nim"
 
-task docs, "Build html docs for nimitheme":
+task index, "Build index.html for nimitheme":
+  exec "nim r docsrc/index.nim"
+
+task docs, "Build ALL docs for nimitheme":
   exec "nim r docsrc/index.nim"
 
   for file in walkDirRec("docsrc/themes"):
