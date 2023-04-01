@@ -14,6 +14,10 @@ const
     pre {
       padding: 0px;
     }
+
+    main figure {
+      float: none
+    }
   </style>
 """
 
