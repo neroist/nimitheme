@@ -21,12 +21,20 @@ task ri, "Build both index.html and readme for nimitheme":
   readmeTask()
   indexTask()
 
-task docs, "Build ALL docs for nimitheme":
+task docs, "Build theme docs for nimitheme":
+  let theme = if commandLineParams()[^1] in ["docs", "*"]: 
+      "docsrc/themes"
+    else:
+      "docsrc/themes/" & commandLineParams()[^1]
+
   exec "nim r docsrc/index.nim"
 
-  for file in walkDirRec("docsrc/themes"):
-    if file.extractFilename() notin ["gendoc.nim", "nim.cfg"] and file.splitFile().ext == ".nim":
-      exec "nim r " & file  
+  if dirExists(theme):
+    for file in walkDirRec(theme):
+      if file.extractFilename() notin ["gendoc.nim"] and file.splitFile().ext == ".nim":
+        exec "nim r " & file 
+  else:
+    exec "nim r " & theme
     
 # Dependencies
 
