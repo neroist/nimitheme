@@ -7,6 +7,6 @@ import ../gendoc
 
 nbInit(useAdsTufte)
 
-genThemeDoc(useAdsTufte, "Ads Notebook")
+genThemeDoc(useAdsTufte, "Ads Tufte")
 
 nbSave
