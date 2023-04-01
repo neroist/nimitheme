@@ -2,8 +2,6 @@ import std/tables
 
 import nimib
 
-import ./utils
-
 const 
   darkReader* = """
   <script src="https://cdn.jsdelivr.net/npm/darkreader/darkreader.min.js"></script>
