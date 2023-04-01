@@ -23,6 +23,10 @@ const
   main {
     padding: 5px
   }
+
+  footer div.nb-box {
+    padding-right: 10px;
+  }
 </style>
 """
   attriBrightLightGreenMadeWithNimib* = """<span class="nb-small" style="color: white">made with <a href="https://pietroppeter.github.io/nimib/">nimib 🐳</a></span>"""
