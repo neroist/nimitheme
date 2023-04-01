@@ -38,7 +38,7 @@ proc useSakuraInk*(doc: var NbDoc) =
 
 proc useSakuraPink*(doc: var NbDoc) = 
   useStyle sakuraPink, sakuraStyle
-  doc.highlight = horizonLight
+  doc.highlight = sagelight
 
 proc useSakuraVader*(doc: var NbDoc) = 
   useStyle sakuraVader, sakuraStyle, useDarkMode = true
