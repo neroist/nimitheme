@@ -11,23 +11,25 @@ const
   attriLightFairyPink* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/lightfairy-pink.css" />"""
   attriMidnightGreen* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/raj457036/attriCSS/themes/midnight-green.css" />"""
   attriStyle* = """
-  <style>
-    pre {
-      background-color: inherit;
-    }
+<style>
+  pre {
+    background-color: inherit;
+  }
 
-    header, section#source {
-      padding: 15px;
-    }
+  header, section#source {
+    padding: 15px;
+  }
 
-    main {
-      padding: 5px
-    }
-  </style>
+  main {
+    padding: 5px
+  }
+</style>
 """
+  attriBrightLightGreenMadeWithNimib* = """<span class="nb-small" style="color: white">made with <a href="https://pietroppeter.github.io/nimib/">nimib 🐳</a></span>"""
 
 proc useAttriBrightLightGreen*(doc: var NbDoc) = 
   useStyle attriBrightLightGreen, attriStyle
+  doc.partials["footer_left"] = attriBrightLightGreenMadeWithNimib
 
 proc useAttriDarkFairyPink*(doc: var NbDoc) = 
   useStyle attriDarkFairyPink, attriStyle
