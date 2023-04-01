@@ -11,7 +11,6 @@ const
   adsTufteStyle* = """
   <style>
     body { padding-left: 0px; }
-    main { padding-left: 12.5%; }
     footer { width: 100%; }
   </style>  
 """
