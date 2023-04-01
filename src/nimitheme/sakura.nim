@@ -1,7 +1,8 @@
 import nimib/themes
 import nimib
 
-import highlight_js
+import ./highlight_js
+import ./utils
 
 const
   sakura* = """<link rel="stylesheet" type="text/css" href="https://unpkg.com/sakura.css/css/sakura.css">"""
@@ -20,41 +21,24 @@ const
 """
 
 proc useSakura*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = sakura
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
+  useStyle sakura, sakuraStyle
 
 proc useSakuraDarkSolarized*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["highlight"] = solarizedDark
-  doc.context["stylesheet"] = sakuraDarkSolarized
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
+  useStyle sakuraDarkSolarized, sakuraStyle, useDarkMode = true
+  doc.highlight = solarizedDark
 
 proc useSakuraDark*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["stylesheet"] = sakuraDark
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
+  useStyle sakuraDark, sakuraStyle, useDarkMode = true
 
 proc useSakuraEarthly*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = sakuraEarthly
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
+  useStyle sakuraEarthly, sakuraStyle
 
 proc useSakuraInk*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = sakuraInk
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
+  useStyle sakuraInk, sakuraStyle
 
 proc useSakuraPink*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = sakuraPink
-  doc.context["highlight"] = horizonLight
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
+  useStyle sakuraPink, sakuraStyle
+  doc.highlight = horizonLight
 
 proc useSakuraVader*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["stylesheet"] = sakuraVader
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
+  useStyle sakuraVader, sakuraStyle, useDarkMode = true

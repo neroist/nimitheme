@@ -3,6 +3,8 @@ import std/tables
 import nimib/themes
 import nimib
 
+import ./utils
+
 const 
   w3 = """<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">"""
   w3SourceButton = """<button class="nb-small w3-button w3-round" id="show" onclick="toggleSourceDisplay()">Show Source</button>"""
@@ -91,9 +93,7 @@ const
 """
 
 proc useW3*(doc: var NbDoc) =
-  doc.useDefault()
-  doc.context["stylesheet"] = w3
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & w3Style
+  useStyle w3, w3Style
 
   doc.partials["footer_right"] = w3SourceButton
   doc.partials["main"] = w3Main

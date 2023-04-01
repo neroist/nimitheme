@@ -1,7 +1,10 @@
+import std/strutils
+
 import nimib/themes
 import nimib
 
-import highlight_js
+import ./highlight_js
+import ./utils
 
 const
   basic* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/basic.min.css" />"""
@@ -20,29 +23,17 @@ const
 
 
 proc useBasic*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = basic & '\n' & basicMobile
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & basicStyle
+  useStyle [basic, basicMobile], basicStyle
 
 proc useBasicDarkClassic*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
   doc.highlight = tomorrowNightBlue
-  doc.context["stylesheet"] = basic & '\n' & basicDarkClassic & '\n' & basicMobile
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & basicStyle
+  useStyle [basic, basicDarkClassic, basicMobile], basicStyle, useDarkMode = true
 
 proc useBasicDarkOrange*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["stylesheet"] = basic & '\n' & basicDarkOrange & '\n' & basicMobile
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & basicStyle
+  useStyle [basic, basicDarkOrange, basicMobile], basicStyle, useDarkMode = true
 
 proc useBasicLightAquamarine*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = basic & '\n' & basicLightAquamarine & '\n' & basicMobile
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & basicStyle
+  useStyle [basic, basicLightAquamarine, basicMobile], basicStyle
 
 proc useBasicLightClassic*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = basic & '\n' & basicLightClassic & '\n' & basicMobile
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & basicStyle
+  useStyle [basic, basicLightClassic, basicMobile], basicStyle

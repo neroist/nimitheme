@@ -1,7 +1,8 @@
 import nimib/themes
 import nimib
 
-import highlight_js
+import ./highlight_js
+import ./utils
 
 const
   pico* = """<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">"""
@@ -47,18 +48,13 @@ const
 </html>"""
 
 proc usePico*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = pico
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & picoStyle
+  useStyle pico, picoStyle
 
 proc usePicoDark*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.usePico()
-  doc.context["highlight"] = solarizedDark
+  useStyle pico, useDarkMode = true
+  doc.highlight = solarizedDark
   doc.partials["document"] = picoDarkDocument
 
 proc usePicoLight*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.usePico()
+  useStyle pico
   doc.partials["document"] = picoLightDocument

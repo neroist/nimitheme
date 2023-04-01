@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   bonsai* = """<link href="https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css" rel="stylesheet" />"""
   bonsaiStyle* = """
@@ -15,6 +17,4 @@ const
 """
 
 proc useBonsai*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = bonsai
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & bonsaiStyle
+  useStyle bonsai, bonsaiStyle

@@ -1,7 +1,8 @@
 import nimib/themes
 import nimib
 
-import highlight_js
+import ./highlight_js
+import ./utils
 
 const
   bamboo* = """<link rel="stylesheet" href="https://unpkg.com/bamboo.css">"""
@@ -20,18 +21,11 @@ const
 """
 
 proc useBamboo*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = bamboo
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & bambooStyle
+  useStyle bamboo, bambooStyle
 
 proc useBambooDark*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
   doc.highlight = codeschool
-  doc.context["stylesheet"] = bambooDark
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & bambooStyle
+  useStyle bambooDark, bambooStyle, useDarkMode = true
 
 proc useBambooLight*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = bambooLight
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & bambooStyle
+  useStyle bambooLight, bambooStyle

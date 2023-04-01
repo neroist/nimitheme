@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   mercury* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/wmeredith/MercuryCSS/dist/mercury.css">"""
   mercuryStyle* = """
@@ -20,6 +22,4 @@ const
 """
 
 proc useMercury*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = mercury
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & mercuryStyle
+  useStyle mercury, mercuryStyle

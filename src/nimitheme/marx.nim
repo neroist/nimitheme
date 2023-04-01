@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   marx* = """<link rel="stylesheet" href="https://unpkg.com/marx-css/css/marx.min.css">"""
   marxStyle* = """
@@ -12,7 +14,4 @@ const
 """
 
 proc useMarx*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = marx
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & marxStyle
-
+  useStyle marx, marxStyle

@@ -1,6 +1,8 @@
 import nimib/themes
 import nimib
 
+import ./utils
+
 const
   style* = """<link rel="stylesheet" href="https://unpkg.com/style.css">"""
   styleStyle* = """
@@ -21,6 +23,4 @@ const
 """
 
 proc useStyle*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = style
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & styleStyle
+  useStyle style, styleStyle

@@ -1,7 +1,8 @@
 import nimib/themes
 import nimib
 
-import highlight_js
+import ./highlight_js
+import ./utils
 
 const
   w3cChocolate* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Chocolate">"""
@@ -14,36 +15,26 @@ const
   w3cUltramarine* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Ultramarine">"""
 
 proc useW3cChocolate*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["stylesheet"] = w3cChocolate
+  useStyle w3cChocolate, useDarkMode = true
 
 proc useW3cMidnight*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.darkMode()
-  doc.context["stylesheet"] = w3cMidnight
+  useStyle w3cMidnight, useDarkMode = true
 
 proc useW3cModernist*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = w3cModernist
+  useStyle w3cModernist
 
 proc useW3cOldStyle*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = w3cOldstyle
+  useStyle w3cOldstyle
 
 proc useW3cSteely*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = w3cSteely
+  useStyle w3cSteely
 
 proc useW3cSwiss*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = w3cSwiss
+  useStyle w3cSwiss
 
 proc useW3cTraditional*(doc: var NbDoc) = 
-  doc.useDefault()
-  doc.context["stylesheet"] = w3cTraditional
+  useStyle w3cTraditional
 
 proc useW3cUltramarine*(doc: var NbDoc) = 
-  doc.useDefault()
+  useStyle w3cUltramarine
   doc.highlight = tomorrowNightBlue
-  doc.context["stylesheet"] = w3cUltramarine
