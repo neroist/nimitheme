@@ -17,6 +17,10 @@ task readme, "Build readme for nimitheme":
 task index, "Build index.html for nimitheme":
   exec "nim r docsrc/index.nim"
 
+task ri, "Build both index.html and readme for nimitheme":
+  readmeTask()
+  indexTask()
+
 task docs, "Build ALL docs for nimitheme":
   exec "nim r docsrc/index.nim"
 
