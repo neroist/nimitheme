@@ -23,4 +23,4 @@ const
 """
 
 proc useStyle*(doc: var NbDoc) = 
-  utils.useStyle style, styleStyle
+  useStyle style, styleStyle
