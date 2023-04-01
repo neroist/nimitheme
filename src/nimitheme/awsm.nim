@@ -29,7 +29,7 @@ proc useAwsmGondola*(doc: var NbDoc) =
 
 proc useAwsmMischka*(doc: var NbDoc) = 
   useStyle awsmMischka
-  doc.highlight = tokyoNightLight
+  doc.highlight = equilibruimGreyLight
 
 proc useAwsmBigStone*(doc: var NbDoc) = 
   useStyle awsmBigStone, useDarkMode = true
