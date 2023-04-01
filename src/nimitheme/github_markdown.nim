@@ -42,7 +42,6 @@ proc useGithubMarkdown*(doc: var NbDoc) =
   doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & githubMarkdownStyle
   doc.partials["document"] = githubMarkdownDocument
 
-
 proc useGithubMarkdownDark*(doc: var NbDoc) = 
   doc.useDefault()
   doc.darkMode()
