@@ -1,17 +1,17 @@
 name: generate-doc
 run-name: Generate documentation
 
-on: 
-  push:
-    branches:
-      - "main"
-
-    paths:
-      - "nimitheme.nimble"
-
-      - "docsrc/**"
-      - "src/**"
-      - ".github/workflows/**"
+#on: 
+#  push:
+#    branches:
+#      - "main"
+#
+#    paths:
+#      - "nimitheme.nimble"
+#
+#      - "docsrc/**"
+#      - "src/**"
+#      - ".github/workflows/**"
 
 jobs:
   generate-doc:
