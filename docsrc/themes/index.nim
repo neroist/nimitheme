@@ -34,7 +34,7 @@ Here is an index of all the available themes in nimitheme:
   - [White](awsm/white.html)
 - [**Bamboo**](bamboo/)
   - [Dark](bamboo/dark.html)
-  - [White](bamboo/white.html)
+  - [Light](bamboo/light.html)
 - [**Basic**](basic/)
   - [Dark Classic](basic/dark_classic.html)
   - [Dark Orange](basic/dark_orange.html)
