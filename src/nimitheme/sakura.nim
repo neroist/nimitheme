@@ -34,7 +34,7 @@ proc useSakuraEarthly*(doc: var NbDoc) =
   useStyle sakuraEarthly, sakuraStyle
 
 proc useSakuraInk*(doc: var NbDoc) = 
-  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & sakuraStyle
+  useStyle sakuraInk, sakuraStyle
 
 proc useSakuraPink*(doc: var NbDoc) = 
   useStyle sakuraPink, sakuraStyle

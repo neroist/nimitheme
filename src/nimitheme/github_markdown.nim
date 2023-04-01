@@ -42,7 +42,6 @@ proc useGithubMarkdown*(doc: var NbDoc) =
   useStyle githubMarkDown, githubMarkdownStyle
   doc.partials["document"] = githubMarkdownDocument
 
-
 proc useGithubMarkdownDark*(doc: var NbDoc) = 
   useStyle githubMarkDownDark, githubMarkdownStyle, useDarkMode = true
   doc.partials["document"] = githubMarkdownDocument
