@@ -6,7 +6,7 @@ import ./utils
 const
   adsGazette* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/dohliam/dropin-minimal-css/min/ads-gazette.min.css" />"""
   adsMedium* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/dohliam/dropin-minimal-css/min/ads-medium.min.css" />"""
-  adsNoteBook* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/dohliam/dropin-minimal-css/min/ads-notebook.min.css" />"""
+  adsNoteBook* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/neroist/nimitheme/assets/ads-notebook.min.css" />"""
   adsTufte* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/dohliam/dropin-minimal-css/min/ads-tufte.min.css" />"""
   adsTufteStyle* = """
   <style>
