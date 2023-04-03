@@ -21,7 +21,8 @@ const
   }
 
   main {
-    padding: 5px
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   footer div.nb-box {
