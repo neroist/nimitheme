@@ -2,7 +2,7 @@ import std/os
 
 # Package
 
-version       = "0.3.0"
+version       = "0.2.0"
 author        = "Jasmine"
 description   = "Make nimib look beautiful with nimitheme"
 license       = "MIT"
