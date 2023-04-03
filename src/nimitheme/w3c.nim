@@ -13,12 +13,19 @@ const
   w3cSwiss* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Swiss">"""
   w3cTraditional* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Traditional">"""
   w3cUltramarine* = """<link rel="stylesheet" type="text/css" href="https://www.w3.org/StyleSheets/Core/Ultramarine">"""
+  w3cMidnightStyle* = """
+  <style>
+    body {
+      margin-left: 8%;
+    }
+  </style>
+"""
 
 proc useW3cChocolate*(doc: var NbDoc) = 
   useStyle w3cChocolate, useDarkMode = true
 
 proc useW3cMidnight*(doc: var NbDoc) = 
-  useStyle w3cMidnight, useDarkMode = true
+  useStyle w3cMidnight, w3cMidnightStyle, useDarkMode = true
 
 proc useW3cModernist*(doc: var NbDoc) = 
   useStyle w3cModernist
