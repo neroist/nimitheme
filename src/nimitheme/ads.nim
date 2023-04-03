@@ -14,12 +14,19 @@ const
     footer { width: 100%; }
   </style>  
 """
+  adsMediumStyle* = """
+  <style>
+    header {
+      padding-top: 22px;
+    }
+  </style>
+"""
 
 proc useAdsGazette*(doc: var NbDoc) = 
   useStyle adsGazette
 
 proc useAdsMedium*(doc: var NbDoc) = 
-  useStyle adsMedium
+  useStyle adsMedium, adsMediumStyle
 
 proc useAdsNoteBook*(doc: var NbDoc) = 
   useStyle adsNoteBook
