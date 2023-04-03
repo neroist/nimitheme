@@ -22,6 +22,7 @@ import nimitheme/axist
 import nimitheme/basic
 import nimitheme/latex
 import nimitheme/yorha
+import nimitheme/paper
 import nimitheme/awsm
 import nimitheme/marx
 import nimitheme/pico
@@ -43,6 +44,7 @@ export bare
 export pico
 export marx
 export awsm
+export paper
 export yorha
 export latex
 export basic
