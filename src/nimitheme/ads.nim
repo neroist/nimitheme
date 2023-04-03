@@ -1,6 +1,7 @@
 import nimib/themes
 import nimib
 
+import ./highlight_js
 import ./utils
 
 const
@@ -30,6 +31,7 @@ proc useAdsMedium*(doc: var NbDoc) =
 
 proc useAdsNoteBook*(doc: var NbDoc) = 
   useStyle adsNoteBook
+  doc.highlight = gruvboxLightMedium
 
 proc useAdsTufte*(doc: var NbDoc) = 
   useStyle adsTufte, adsTufteStyle
