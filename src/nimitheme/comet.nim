@@ -1,3 +1,5 @@
+# From: https://marcbruederlin.github.io/comet/
+
 import nimib/themes
 import nimib
 

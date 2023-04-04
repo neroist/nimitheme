@@ -1,3 +1,5 @@
+# https://www.w3schools.com/w3css/defaulT.asp
+
 import std/tables
 
 import nimib/themes

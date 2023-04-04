@@ -1,4 +1,4 @@
-# theme from https://github.com/zetashift/nimibujo
+# From: https://github.com/zetashift/nimibujo
 
 import nimib/themes
 import nimib

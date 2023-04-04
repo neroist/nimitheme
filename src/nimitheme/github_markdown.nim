@@ -1,3 +1,5 @@
+# From: https://github.com/sindresorhus/github-markdown-css
+
 import nimib/themes
 import nimib
 

@@ -1,3 +1,5 @@
+# From: https://github.com/susam/spcss
+
 import nimib/themes
 import nimib
 

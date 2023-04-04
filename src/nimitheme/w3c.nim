@@ -1,3 +1,5 @@
+# From: https://www.w3.org/StyleSheets/Core/Overview
+
 import nimib/themes
 import nimib
 

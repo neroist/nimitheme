@@ -1,3 +1,5 @@
+# From: https://wmeredith.github.io/MercuryCSS/
+
 import nimib/themes
 import nimib
 
