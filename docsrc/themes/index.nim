@@ -80,6 +80,7 @@ Here is an index of all the available themes in nimitheme:
 - [Bare](bare.html)
 - [Bonsai](bonsai.html)
 - [Comet](comet.html)
+- [Concrete](concrete.html)
 - [Downstyler](downstyler.html)
 - [Holiday](holiday.html)
 - [Latex](latex.html)
