@@ -1,3 +1,5 @@
+# From: https://rilwis.github.io/bamboo/
+
 import nimib/themes
 import nimib
 

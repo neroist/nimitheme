@@ -1,3 +1,5 @@
+# From: https://vladocar.github.io/Basic.css/
+
 import std/strutils
 
 import nimib/themes

@@ -1,3 +1,5 @@
+# From: https://github.com/oxalorg/sakura
+
 import nimib/themes
 import nimib
 

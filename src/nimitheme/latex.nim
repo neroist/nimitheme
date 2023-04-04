@@ -1,3 +1,5 @@
+# From: https://davidrzs.github.io/latexcss/
+
 import nimib/themes
 import nimib
 

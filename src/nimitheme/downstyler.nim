@@ -1,3 +1,5 @@
+# From: https://waldyrious.net/downstyler/
+
 import nimib/themes
 import nimib
 

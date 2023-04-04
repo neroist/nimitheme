@@ -1,8 +1,13 @@
 name: generate-doc
 run-name: Generate documentation
 
-on: [workflow_dispatch]
+on:  
+  push:
+    tags:
+      - '*'
 
+  workflow_dispatch:
+  
 #on: 
 #  push:
 #    branches:
