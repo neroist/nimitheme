@@ -6,6 +6,7 @@ import nimitheme/classless
 import nimitheme/markdown
 import nimitheme/nimibujo
 import nimitheme/no_class
+import nimitheme/concrete
 import nimitheme/a11yana
 import nimitheme/holiday
 import nimitheme/bahunya
@@ -61,6 +62,7 @@ export mercury
 export bahunya
 export holiday
 export a11yana
+export concrete
 export no_class
 export nimibujo
 export markdown
