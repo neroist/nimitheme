@@ -24,6 +24,7 @@ import nimitheme/latex
 import nimitheme/yorha
 import nimitheme/paper
 import nimitheme/comet
+import nimitheme/spcss
 import nimitheme/awsm
 import nimitheme/marx
 import nimitheme/pico
@@ -45,6 +46,7 @@ export bare
 export pico
 export marx
 export awsm
+export spcss
 export comet
 export paper
 export yorha
