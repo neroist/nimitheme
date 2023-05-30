@@ -2,6 +2,7 @@ import nimitheme/github_markdown
 import nimitheme/highlight_js
 import nimitheme/dark_reader
 import nimitheme/downstyler
+import nimitheme/hypnagogic
 import nimitheme/classless
 import nimitheme/markdown
 import nimitheme/nimibujo
@@ -69,6 +70,7 @@ export no_class
 export nimibujo
 export markdown
 export classless
+export hypnagogic
 export downstyler
 export dark_reader
 export highlight_js
