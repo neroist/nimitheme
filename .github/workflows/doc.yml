@@ -7,18 +7,6 @@ on:
       - '*'
 
   workflow_dispatch:
-  
-#on: 
-#  push:
-#    branches:
-#      - "main"
-#
-#    paths:
-#      - "nimitheme.nimble"
-#
-#      - "docsrc/**"
-#      - "src/**"
-#      - ".github/workflows/**"
 
 jobs:
   generate-doc:
