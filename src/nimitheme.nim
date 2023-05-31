@@ -14,6 +14,7 @@ import nimitheme/a11yana
 import nimitheme/holiday
 import nimitheme/bahunya
 import nimitheme/mercury
+import nimitheme/furtive
 import nimitheme/sakura
 import nimitheme/simple
 import nimitheme/almond
@@ -65,6 +66,7 @@ export bonsai
 export almond
 export simple
 export sakura
+export furtive
 export mercury
 export bahunya
 export holiday
