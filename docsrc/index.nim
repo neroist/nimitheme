@@ -16,17 +16,20 @@ nbText: """
 nbImage(
   "https://raw.githubusercontent.com/neroist/nimitheme/main/docs/images/nimitheme.png", 
   "", # Caption is the blockquote below
-  "nimitheme presentation image"
+  "Nimitheme presentation image"
 )
 
 nbText: """
 > *Make nimib look **beautiful** with nimitheme*
 
-Nimitheme is a Nimble package that provides additional themes for [nimib](https://github.com/pietroppeter/nimib).
+Nimitheme is a Nimble package that provides additional themes for
+[nimib](https://github.com/pietroppeter/nimib).
 
-You can view the index of all the themes available in nimitheme here: <https://neroist.github.io/nimitheme/themes>.
+You can view the index of all the themes available in Nimitheme here:
+<https://neroist.github.io/nimitheme/themes>.
 
-In addition, support for [Dark Reader](https://github.com/darkreader/darkreader) and
+In addition, support for 
+[Dark Reader](https://github.com/darkreader/darkreader) and
 [highlight.js](https://highlightjs.org/) are available.
 
 ## Installation
@@ -58,7 +61,8 @@ nbCodeSkip:
 nbText: """
 ### Dark Reader Support
 
-You can enable Dark Reader in your nimib document by calling `useDarkReader` on the `nb` variable injected by `nbInit`, like so:
+You can enable Dark Reader in your nimib document by calling `useDarkReader`
+on the `nb` variable injected by `nbInit`, like so:
 """
 
 nbCodeSkip:
@@ -67,17 +71,45 @@ nbCodeSkip:
 nbText: """
 ### Highlight.js support
 
-You can also easily set the highlight.js code theme using `highlight=`. For example, you can do something like this:
+You can also further stylize your code via setting a specific highlight.js
+code theme (outside of Android Dark and Atom One light). You can do this by
+using the `highlight=` template. For example, you can do something like this:
 """
 
 nbCodeSkip: 
   nb.highlight = materialPalenight
 
 nbText: """
-*All* highlight.js themes are available (see [`highlight_js.nim`](https://github.com/neroist/nimitheme/blob/main/src/nimitheme/highlight_js.nim)).
+to set the highlight.js theme your nimib document uses.
 
-For themes that have the same name as a base16 theme, the base16 theme's name is postfixed with `_base16`.
+***All*** highlight.js themes are available (see
+[`highlight_js.nim`](https://github.com/neroist/nimitheme/blob/main/src/nimitheme/highlight_js.nim)).
 
+For themes that have the same name as a base16 theme, the base16 theme's
+name is postfixed with `_base16`.
+
+### Edit CSS Variables
+
+Many CSS libraries that Nimitheme uses allow you to customize the style of
+your document using CSS variables the user can manually set. Nimitheme allows
+you to set such variables via the `setCssVar` template. For example, you can
+do stuff like this:
+"""
+
+nbCodeSkip:
+  nbInit(useTerminal)
+
+  nb.setCssVar("global-font-size", "16px")
+
+  # Set multiple variables at once
+  nb.setCssVar({
+    "primary-color": "purple",
+    "secondary-color": "pink"
+  })
+
+# TODO: Add section explaining how to create themes
+
+nbText: """
 ## License
 
 This project is licensed under the MIT license.
