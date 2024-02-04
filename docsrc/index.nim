@@ -69,6 +69,14 @@ nbCodeSkip:
   nb.useDarkReader()
 
 nbText: """
+In addition, you can also *disable* Dark Reader via the `disableDarkReader`
+proc. You can call it similarly to how you called the last function.
+"""
+
+nbCodeSkip:
+  nb.disableDarkReader()
+
+nbText: """
 ### Highlight.js support
 
 You can also further stylize your code via setting a specific highlight.js
