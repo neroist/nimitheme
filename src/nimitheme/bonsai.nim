@@ -9,8 +9,8 @@ const
   bonsai* = """<link href="https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css" rel="stylesheet" />"""
   bonsaiStyle* = """
 <style>
-  footer {
-    padding: 5px;
+  footer, header, main {
+    padding: 15px;
   }
   main, section#source {
     padding: 10px;
