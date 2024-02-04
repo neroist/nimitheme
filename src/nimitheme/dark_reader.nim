@@ -10,7 +10,7 @@ const
     DarkReader.enable();
   </script>
 """
-  noDarkreader* = """
+  lockDarkreader* = """
   <meta name="darkreader-lock">
 """
 
@@ -22,6 +22,6 @@ proc useDarkReader*(doc: var NbDoc) =
 
 proc disableDarkreader*(doc: var NbDoc) =
   if not doc.partials.contains("head_other"):
-    doc.partials["head_other"] = noDarkreader
+    doc.partials["head_other"] = lockDarkreader
   else:
-    doc.partials["head_other"] &= noDarkreader
+    doc.partials["head_other"] &= lockDarkreader
