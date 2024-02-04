@@ -11,7 +11,11 @@ const
 <style>
   header {
     margin-top: 1em;
-    padding: 5px;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
   }
 
   pre {
