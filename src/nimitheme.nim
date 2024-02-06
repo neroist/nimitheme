@@ -41,6 +41,9 @@ import nimitheme/ads
 import nimitheme/w3c
 import nimitheme/w3
 
+template addCss*(style: string = "") =
+  doc.context["nb_style"] = doc.context["nb_style"].vString & '\n' & style
+
 export w3
 export w3c
 export ads
