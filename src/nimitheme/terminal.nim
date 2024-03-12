@@ -54,6 +54,7 @@ const
 
 proc useTerminal*(doc: var NbDoc) = 
   useStyle terminal
+  doc.fixCode()
 
   doc.partials["document"] = terminalDocument
   doc.partials["main"] = terminalMain

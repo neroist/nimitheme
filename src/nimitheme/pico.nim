@@ -55,12 +55,15 @@ const
 
 proc usePico*(doc: var NbDoc) = 
   useStyle pico, picoStyle
+  doc.fixCode()
 
 proc usePicoDark*(doc: var NbDoc) = 
   useStyle pico, picoStyle, useDarkMode = true
   doc.highlight = solarizedDark
   doc.partials["document"] = picoDarkDocument
+  doc.fixCode()
 
 proc usePicoLight*(doc: var NbDoc) = 
   useStyle pico, picoStyle
   doc.partials["document"] = picoLightDocument
+  doc.fixCode()

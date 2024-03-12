@@ -10,3 +10,4 @@ const
 
 proc useBahunya*(doc: var NbDoc) = 
   useStyle bahunya, useDarkMode = true
+  doc.fixCode()

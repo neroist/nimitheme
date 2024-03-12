@@ -10,3 +10,4 @@ const
 
 proc useHoliday*(doc: var NbDoc) = 
   useStyle holiday, useDarkMode = true
+  doc.fixCode()

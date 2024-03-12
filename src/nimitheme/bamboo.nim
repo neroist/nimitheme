@@ -24,10 +24,13 @@ const
 
 proc useBamboo*(doc: var NbDoc) = 
   useStyle bamboo, bambooStyle
+  doc.fixCode()
 
 proc useBambooDark*(doc: var NbDoc) = 
   useStyle bambooDark, bambooStyle, useDarkMode = true
   doc.highlight = codeschool
+  doc.fixCode()
 
 proc useBambooLight*(doc: var NbDoc) = 
   useStyle bambooLight, bambooStyle
+  doc.fixCode()

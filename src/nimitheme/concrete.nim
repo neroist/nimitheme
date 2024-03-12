@@ -20,9 +20,12 @@ const
 
 proc useConcrete*(doc: var NbDoc) = 
   useStyle concrete, concreteStyle
+  doc.fixCode()
 
 proc useConcreteLight*(doc: var NbDoc) = 
   useStyle concreteLight, concreteStyle
+  doc.fixCode()
 
 proc useConcreteDark*(doc: var NbDoc) = 
   useStyle concreteDark, concreteStyle, useDarkMode = true
+  doc.fixCode()

@@ -19,9 +19,12 @@ const
 
 proc useSPCSS*(doc: var NbDoc) = 
   useStyle spcss, spcssStyle
+  doc.fixCode()
 
 proc useSPCSSDark*(doc: var NbDoc) = 
   useStyle spcssDark, spcssStyle, useDarkMode = true
+  doc.fixCode()
 
 proc useSPCSSLight*(doc: var NbDoc) = 
   useStyle spcssLight, spcssStyle
+  doc.fixCode()

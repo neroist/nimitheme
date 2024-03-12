@@ -20,8 +20,14 @@ const
     main figure {
       float: none
     }
+
+    #source, header {
+      max-width: 78ch;
+      margin: auto;
+    }
   </style>
 """
 
 proc useWrit*(doc: var NbDoc) = 
   useStyle writ, writStyle
+  doc.fixCode()

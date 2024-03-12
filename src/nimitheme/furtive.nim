@@ -41,8 +41,11 @@ const
 proc useFurtive*(doc: var NbDoc) = 
   useStyle furtive
 
+  doc.fixCode()
+
   doc.partials["main"] = furtiveMain
   doc.partials["header"] = furtiveHeader
   doc.partials["footer"] = furtiveFooter
   doc.partials["source_section"] = optOut(furtiveSourceSection, "no_source")
   doc.partials["footer_right"] = optOut(furtiveShowSourceButton, "no_source")
+

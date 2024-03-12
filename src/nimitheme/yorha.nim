@@ -8,7 +8,18 @@ import ./utils
 
 const
   YoRHa* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/metakirby5/yorha/dist/yorha.min.css" />"""
+  YoRHaStyle* = """
+<style>
+  body {
+    margin: 1rem auto;
+    max-width: 56rem;
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+</style>
+"""
 
 proc useYoRHa*(doc: var NbDoc) = 
-  useStyle YoRHa
+  useStyle YoRHa, YoRHaStyle
   doc.highlight = gruvboxLightHard
+  doc.fixCode()

@@ -20,9 +20,25 @@ const
   adsMediumStyle* = """
   <style>
     header {
+      margin-top: 29px;
       padding-top: 22px;
     }
+
+    footer {
+      padding-bottom: 22px;
+    }
+
+    body {
+      padding-right 5vw !important;
+    }
   </style>
+"""
+  adsNoteBookStyle* = """
+  <style>
+    body {
+      margin-right: 10%
+    }
+  </style>  
 """
 
 proc useAdsGazette*(doc: var NbDoc) = 
@@ -34,6 +50,7 @@ proc useAdsMedium*(doc: var NbDoc) =
 proc useAdsNoteBook*(doc: var NbDoc) = 
   useStyle adsNoteBook
   doc.highlight = gruvboxLightMedium
+  doc.fixCode()
 
 proc useAdsTufte*(doc: var NbDoc) = 
   useStyle adsTufte, adsTufteStyle

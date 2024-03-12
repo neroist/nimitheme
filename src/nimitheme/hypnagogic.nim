@@ -21,7 +21,7 @@ const
       background-color: blue;
       color: yellow;
       font-family: Helvetica;
-    }
+    } 
   </style>
 """
 

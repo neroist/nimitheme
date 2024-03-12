@@ -25,25 +25,33 @@ const
 
 proc useW3cChocolate*(doc: var NbDoc) = 
   useStyle w3cChocolate, useDarkMode = true
+  doc.fixCode()
 
 proc useW3cMidnight*(doc: var NbDoc) = 
   useStyle w3cMidnight, w3cMidnightStyle, useDarkMode = true
+  doc.fixCode()
 
 proc useW3cModernist*(doc: var NbDoc) = 
   useStyle w3cModernist
+  doc.fixCode()
 
 proc useW3cOldStyle*(doc: var NbDoc) = 
   useStyle w3cOldstyle
+  doc.fixCode()
 
 proc useW3cSteely*(doc: var NbDoc) = 
   useStyle w3cSteely
+  doc.fixCode()
 
 proc useW3cSwiss*(doc: var NbDoc) = 
   useStyle w3cSwiss
+  doc.fixCode()
 
 proc useW3cTraditional*(doc: var NbDoc) = 
   useStyle w3cTraditional
+  doc.fixCode()
 
 proc useW3cUltramarine*(doc: var NbDoc) = 
   useStyle w3cUltramarine
   doc.highlight = tomorrowNightBlue
+  doc.fixCode()

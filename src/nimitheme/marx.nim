@@ -17,3 +17,4 @@ const
 
 proc useMarx*(doc: var NbDoc) = 
   useStyle marx, marxStyle
+  doc.fixCode()

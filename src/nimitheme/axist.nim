@@ -9,15 +9,12 @@ const
   axist* = """<link rel="stylesheet" href="https://unpkg.com/axist@latest/dist/axist.min.css" />"""
   axistStyle* = """
 <style>
-code {
-  white-space: inherit;
-}
-
-pre {
-  background-color: inherit;
+pre, pre * {
+  font-family: var(--font-monospace);
 }
 </style>
 """
 
 proc useAxist*(doc: var NbDoc) = 
   useStyle axist, axistStyle
+  doc.fixCode()

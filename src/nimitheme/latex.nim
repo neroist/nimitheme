@@ -10,3 +10,4 @@ const
 
 proc useLatexCSS*(doc: var NbDoc) = 
   useStyle latex
+  doc.fixCode()

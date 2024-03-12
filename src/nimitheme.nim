@@ -39,15 +39,11 @@ import nimitheme/new
 import nimitheme/mvp
 import nimitheme/ads
 import nimitheme/w3c
+import nimitheme/css
 import nimitheme/w3
 
-import nimib
-
-template addCss*(doc: var NbDoc; style: string) =
-  doc.context["nb_style"] = doc.context["nb_style"].vString &
-    '\n' & "<style>\n" & style & "\n</style>"
-
 export w3
+export css
 export w3c
 export ads
 export mvp

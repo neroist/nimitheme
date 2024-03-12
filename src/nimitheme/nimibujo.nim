@@ -10,3 +10,4 @@ const
 
 proc useNimibujo*(doc: var NbDoc) = 
   useStyle nimibujo
+  doc.fixCode()

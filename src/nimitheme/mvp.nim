@@ -31,3 +31,4 @@ const
 
 proc useMvp*(doc: var NbDoc) = 
   useStyle mvp, mvpStyle
+  doc.fixCode()

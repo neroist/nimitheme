@@ -9,3 +9,4 @@ const
 proc useA11yana*(doc: var NbDoc) = 
   doc.useDefault()
   doc.context["stylesheet"] = a11yana
+  doc.fixCode()

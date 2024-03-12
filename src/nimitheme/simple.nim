@@ -17,3 +17,4 @@ const
 
 proc useSimple*(doc: var NbDoc) = 
   useStyle simple, simpleStyle, useDarkMode = true
+  doc.fixCode()

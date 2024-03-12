@@ -12,3 +12,4 @@ const
 proc useNew*(doc: var NbDoc) = 
   useStyle newCss, useDarkMode = true
   doc.highlight = a11yDark
+  doc.fixCode()

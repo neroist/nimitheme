@@ -9,13 +9,13 @@ const
   a11yLight*                  = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/a11y-light.min.css" />"""
   agate*                      = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/agate.min.css" />"""
   anOldHope*                  = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/an-old-hope.min.css" />"""
-  #androidStudio*             = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/androidstudio.min.css" />"""
+  # androidStudio*             = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/androidstudio.min.css" />"""
   arduinoLight*               = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/arduino-light.min.css" />"""
   arta*                       = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/arta.min.css" />"""
   ascetic*                    = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/ascetic.min.css" />"""
   atomOneDark*                = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/atom-one-dark.min.css" />"""
   atomOneDarkReasonable*      = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/atom-one-dark-reasonable.min.css" />"""
-  #atomOneLight*              = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/atom-one-light.min.css" />"""
+  # atomOneLight*              = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/atom-one-light.min.css" />"""
   
   # ---- Start of base16 themes ----
   `3024`*                     = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/base16/3024.min.css" />"""

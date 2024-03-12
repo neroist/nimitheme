@@ -10,8 +10,8 @@ const
   styleStyle* = """
 <style>
   body {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   header, footer {
@@ -26,3 +26,4 @@ const
 
 proc useStyle*(doc: var NbDoc) = 
   useStyle style, styleStyle
+  doc.fixCode()

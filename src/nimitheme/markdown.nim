@@ -13,12 +13,16 @@ const
 
 proc useMarkdownSplendor*(doc: var NbDoc) = 
   useStyle markdownSplendor
+  doc.fixCode()
 
 proc useMarkdownRetro*(doc: var NbDoc) = 
   useStyle markdownRetro, useDarkMode = true
+  doc.fixCode()
 
 proc useMarkdownAir*(doc: var NbDoc) = 
   useStyle markdownAir
+  doc.fixCode()
 
 proc useMarkdownModest*(doc: var NbDoc) = 
   useStyle markdownModest
+  doc.fixCode()

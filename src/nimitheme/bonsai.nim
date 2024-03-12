@@ -20,3 +20,4 @@ const
 
 proc useBonsai*(doc: var NbDoc) = 
   useStyle bonsai, bonsaiStyle
+  doc.fixCode()

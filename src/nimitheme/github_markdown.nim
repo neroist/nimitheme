@@ -43,11 +43,14 @@ const
 proc useGithubMarkdown*(doc: var NbDoc) = 
   useStyle githubMarkDown, githubMarkdownStyle
   doc.partials["document"] = githubMarkdownDocument
+  doc.fixCode()
 
 proc useGithubMarkdownDark*(doc: var NbDoc) = 
   useStyle githubMarkDownDark, githubMarkdownStyle, useDarkMode = true
   doc.partials["document"] = githubMarkdownDocument
+  doc.fixCode()
 
 proc useGithubMarkdownLight*(doc: var NbDoc) = 
   useStyle githubMarkDownLight, githubMarkdownStyle
   doc.partials["document"] = githubMarkdownDocument
+  doc.fixCode()
