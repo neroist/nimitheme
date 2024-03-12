@@ -32,4 +32,4 @@ proc useHypnagogicBlack*(doc: var NbDoc) =
   useStyle hypnagogicBlack, useDarkMode = true
 
 proc useHypnagogicBlue*(doc: var NbDoc) = 
-  useStyle hypnagogicBlue, useDarkMode = true
+  useStyle hypnagogicBlue
