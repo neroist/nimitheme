@@ -17,4 +17,4 @@ const
 
 proc usePaper*(doc: var NbDoc) = 
   useStyle paper, paperStyle
-  doc.fixCode()
+  

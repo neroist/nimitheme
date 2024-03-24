@@ -22,4 +22,4 @@ const
 proc useYoRHa*(doc: var NbDoc) = 
   useStyle YoRHa, YoRHaStyle
   doc.highlight = gruvboxLightHard
-  doc.fixCode()
+  

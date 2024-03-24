@@ -11,12 +11,12 @@ const
 
 proc useClassless*(doc: var NbDoc) = 
   useStyle classlessFull
-  doc.fixCode()
+  
 
 proc useClasslessFull*(doc: var NbDoc) = 
   useStyle classlessFull
-  doc.fixCode()
+  
 
 proc useClasslessTiny*(doc: var NbDoc) = 
   useStyle classlessTiny
-  doc.fixCode()
+  

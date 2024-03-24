@@ -21,4 +21,4 @@ const
 
 proc useComet*(doc: var NbDoc) = 
   useStyle comet, cometStyle
-  doc.fixCode()
+  

@@ -11,8 +11,8 @@ const
 
 proc useAlmond*(doc: var NbDoc) = 
   useStyle almond
-  doc.fixCode()
+  
 
 proc useAlmondLite*(doc: var NbDoc) = 
   useStyle almondLite
-  doc.fixCode()
+  

@@ -96,7 +96,7 @@ const
 
 proc useW3*(doc: var NbDoc) =
   useStyle w3, w3Style
-  doc.fixCode()
+  
 
   doc.partials["footer_right"] = w3SourceButton
   doc.partials["main"] = w3Main

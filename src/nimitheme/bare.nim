@@ -26,4 +26,4 @@ const
 
 proc useBare*(doc: var NbDoc) = 
   useStyle bare, bareStyle
-  doc.fixCode()
+  

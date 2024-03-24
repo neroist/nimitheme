@@ -25,5 +25,5 @@ const
 """
 
 proc useTacit*(doc: var NbDoc) = 
-  useStyle tacit, tacitStyle
-  doc.fixCode()
+  useStyle tacit, tacitStyle, fixCode = false
+  

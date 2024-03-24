@@ -13,10 +13,6 @@ const
       padding-top: 15px;
     }
 
-    pre {
-      padding: 0px;
-    }
-
     main figure {
       float: none
     }
@@ -29,5 +25,5 @@ const
 """
 
 proc useWrit*(doc: var NbDoc) = 
-  useStyle writ, writStyle
-  doc.fixCode()
+  useStyle writ, writStyle, fixCode = false
+  

@@ -15,16 +15,12 @@ const
     padding-right: 15px;
   }
 
-  header, footer {
-    padding: 15px;
+  header, footer, main {
+    padding: 15px !important;
   }
 
   footer {
     padding-top: 0px;
-  }
-
-  pre {
-    padding: 5px;
   }
 </style>
 """
@@ -55,15 +51,15 @@ const
 
 proc usePico*(doc: var NbDoc) = 
   useStyle pico, picoStyle
-  doc.fixCode()
+  
 
 proc usePicoDark*(doc: var NbDoc) = 
-  useStyle pico, picoStyle, useDarkMode = true
+  useStyle pico, picoStyle, useDarkMode = true, fixCode = false
   doc.highlight = solarizedDark
   doc.partials["document"] = picoDarkDocument
-  doc.fixCode()
+  
 
 proc usePicoLight*(doc: var NbDoc) = 
-  useStyle pico, picoStyle
+  useStyle pico, picoStyle, fixCode = false
   doc.partials["document"] = picoLightDocument
-  doc.fixCode()
+  

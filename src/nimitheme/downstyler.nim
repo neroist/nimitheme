@@ -10,4 +10,4 @@ const
 
 proc useDownstyler*(doc: var NbDoc) = 
   useStyle downstyler
-  doc.fixCode()
+  

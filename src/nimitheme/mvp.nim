@@ -30,5 +30,5 @@ const
 """
 
 proc useMvp*(doc: var NbDoc) = 
-  useStyle mvp, mvpStyle
-  doc.fixCode()
+  useStyle mvp, mvpStyle, fixCode = false
+  

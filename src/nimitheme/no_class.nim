@@ -34,4 +34,4 @@ const
 
 proc useNoClass*(doc: var NbDoc) = 
   useStyle noClass, noClassStyle
-  doc.fixCode()
+  

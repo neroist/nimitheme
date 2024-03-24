@@ -37,21 +37,21 @@ const
 proc useAttriBrightLightGreen*(doc: var NbDoc) = 
   useStyle attriBrightLightGreen, attriStyle
   doc.partials["footer_left"] = attriBrightLightGreenMadeWithNimib
-  doc.fixCode()
+  
 
 proc useAttriDarkFairyPink*(doc: var NbDoc) = 
   useStyle attriDarkFairyPink, attriStyle
-  doc.fixCode()
+  
 
 proc useAttriDarkForestGreen*(doc: var NbDoc) = 
   useStyle attriDarkForestGreen, attriStyle, useDarkMode = true
   doc.highlight = greenScreen
-  doc.fixCode()
+  
 
 proc useAttriLightFairyPink*(doc: var NbDoc) = 
   useStyle attriLightFairyPink, attriStyle
-  doc.fixCode()
+  
 
 proc useAttriMidnightGreen*(doc: var NbDoc) = 
   useStyle attriMidnightGreen, attriStyle, useDarkMode = true
-  doc.fixCode()
+  

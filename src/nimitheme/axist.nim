@@ -17,4 +17,4 @@ pre, pre * {
 
 proc useAxist*(doc: var NbDoc) = 
   useStyle axist, axistStyle
-  doc.fixCode()
+  

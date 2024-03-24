@@ -50,7 +50,7 @@ proc useAdsMedium*(doc: var NbDoc) =
 proc useAdsNoteBook*(doc: var NbDoc) = 
   useStyle adsNoteBook
   doc.highlight = gruvboxLightMedium
-  doc.fixCode()
+  
 
 proc useAdsTufte*(doc: var NbDoc) = 
   useStyle adsTufte, adsTufteStyle

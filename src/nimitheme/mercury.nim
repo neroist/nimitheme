@@ -29,4 +29,4 @@ const
 
 proc useMercury*(doc: var NbDoc) = 
   useStyle mercury, mercuryStyle
-  doc.fixCode()
+  

@@ -26,4 +26,4 @@ const
 
 proc useStyle*(doc: var NbDoc) = 
   useStyle style, styleStyle
-  doc.fixCode()
+  
