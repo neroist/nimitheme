@@ -16,8 +16,8 @@ template fixCode*(nb: var NbDoc, style: bool = false) =
   
   const sourceSection0 = """<section id="source"><pre class="nohighlight nim hljs">{{{source_highlighted}}}</pre></section>"""
 
-  nb.partials["nbCodeSource"] = "<pre class=\"nohighlight hljs nim\">{{&codeHighlighted}}</pre>"
-  doc.partials["source_section"] = optOut(sourceSection0, "no_source")
+  nb.partials["nbCodeSource"] = """<pre class="nohighlight hljs nim">{{&codeHighlighted}}</pre>"""
+  nb.partials["source_section"] = optOut(sourceSection0, "no_source")
 
 template useStyle*(stylesheet: static[string], customStyle: string = ""; useDarkMode = false, fixCode: static[bool] = true) =
   doc.useDefault

@@ -26,6 +26,8 @@ const
     max-width: 100%;
     padding: 16px;
   }
+
+  pre:has(code) { padding: 0; }
 </style>
 """
 

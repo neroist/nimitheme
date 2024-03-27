@@ -15,13 +15,9 @@ const
     padding-right: 15px;
   }
 
-  header, footer, main {
-    padding: 15px !important;
-  }
-
-  footer {
-    padding-top: 0px;
-  }
+  footer { padding-top: 0px; }
+  pre { padding: 15px; }
+  body > footer, body > header, body > main { padding: var(--spacing) 0; }
 </style>
 """
   picoLightDocument* = """

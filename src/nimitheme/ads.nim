@@ -24,25 +24,19 @@ const
       padding-top: 22px;
     }
 
-    footer {
-      padding-bottom: 22px;
-    }
-
-    body {
-      padding-right 5vw !important;
-    }
+    footer { padding-bottom: 22px; }
+    body { padding-right 5vw !important; }
   </style>
 """
   adsNoteBookStyle* = """
   <style>
-    body {
-      margin-right: 10%
-    }
+    body { margin-right: 10% }
+    code { padding: 0px 3px; }
   </style>  
 """
 
 proc useAdsGazette*(doc: var NbDoc) = 
-  useStyle adsGazette
+  useStyle adsGazette, fixCode = false
 
 proc useAdsMedium*(doc: var NbDoc) = 
   useStyle adsMedium, adsMediumStyle
@@ -53,4 +47,4 @@ proc useAdsNoteBook*(doc: var NbDoc) =
   
 
 proc useAdsTufte*(doc: var NbDoc) = 
-  useStyle adsTufte, adsTufteStyle
+  useStyle adsTufte, adsTufteStyle #, fixCode = false

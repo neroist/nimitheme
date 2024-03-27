@@ -17,9 +17,8 @@ const
   basicLightClassic* = """<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vladocar/Basic.css/css/theme/light-classic.css" />"""
   basicStyle* = """
 <style>
-  main, footer, section#source {
-    padding: 5px;
-  }
+  main { padding: 1em 2em; }
+  footer, header, section#source { padding: 1.5em; }
 </style>
 """
 

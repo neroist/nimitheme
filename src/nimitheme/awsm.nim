@@ -28,17 +28,17 @@ proc useAwsmWhite*(doc: var NbDoc) =
   
 
 proc useAwsmGondola*(doc: var NbDoc) = 
-  useStyle awsmGondola, useDarkMode = true
+  useStyle awsmGondola, useDarkMode = true, fixCode = false
   doc.highlight = atelierDune
   
 
 proc useAwsmMischka*(doc: var NbDoc) = 
-  useStyle awsmMischka
+  useStyle awsmMischka, fixCode = false
   doc.highlight = equilibruimGreyLight
   
 
 proc useAwsmBigStone*(doc: var NbDoc) = 
-  useStyle awsmBigStone, useDarkMode = true
+  useStyle awsmBigStone, useDarkMode = true, fixCode = false
   doc.highlight = tomorrowNightBlue
   
 
