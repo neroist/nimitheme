@@ -19,4 +19,4 @@ In this theme set, there are the following themes:
   - [Ultramarine](ultramarine.html)
 """
 
-nbSave
+var doc* = nb

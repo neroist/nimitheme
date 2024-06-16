@@ -9,4 +9,4 @@ nbInit(useSakuraEarthly)
 
 genThemeDoc(useSakuraEarthly, "Sakura Earthly")
 
-nbSave
+var doc* = nb

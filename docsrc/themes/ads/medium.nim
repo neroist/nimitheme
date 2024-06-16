@@ -9,4 +9,4 @@ nbInit(useAdsMedium)
 
 genThemeDoc(useAdsMedium, "Ads Medium")
 
-nbSave
+var doc* = nb

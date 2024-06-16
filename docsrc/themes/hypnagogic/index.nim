@@ -13,4 +13,4 @@ In this theme set, there are the following themes:
   - [Black](black.html)
 """
 
-nbSave
+var doc* = nb

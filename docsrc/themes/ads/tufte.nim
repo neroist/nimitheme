@@ -9,4 +9,4 @@ nbInit(useAdsTufte)
 
 genThemeDoc(useAdsTufte, "Ads Tufte")
 
-nbSave
+var doc* = nb

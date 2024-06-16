@@ -16,4 +16,4 @@ In this theme set, there are the following themes:
   - [Midnight Green](midnight_green.html) (which you are viewing right now)
 """
 
-nbSave
+var doc* = nb

@@ -9,4 +9,4 @@ nbInit(useW3cTraditional)
 
 genThemeDoc(useW3cTraditional, "W3c Traditional")
 
-nbSave
+var doc* = nb

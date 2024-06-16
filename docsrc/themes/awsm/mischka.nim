@@ -9,4 +9,4 @@ nbInit(useAwsmMischka)
 
 genThemeDoc(useAwsmMischka, "Awsm Mischka")
 
-nbSave
+var doc* = nb

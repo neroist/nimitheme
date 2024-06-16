@@ -9,4 +9,4 @@ nbInit(useW3)
 
 genThemeDoc(useW3, "W3")
 
-nbSave
+var doc* = nb

@@ -15,4 +15,4 @@ In this theme set, there are the following themes:
   - [Light Classic](light_classic.html)
 """
 
-nbSave
+var doc* = nb

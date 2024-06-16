@@ -9,4 +9,4 @@ nbInit(useW3cModernist)
 
 genThemeDoc(useW3cModernist, "W3c Modernist")
 
-nbSave
+var doc* = nb

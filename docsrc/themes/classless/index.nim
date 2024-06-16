@@ -14,4 +14,4 @@ In this theme set, there are the following themes:
 
 """
 
-nbSave
+var doc* = nb

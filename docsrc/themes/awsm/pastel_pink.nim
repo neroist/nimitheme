@@ -9,4 +9,4 @@ nbInit(useAwsmPastelPink)
 
 genThemeDoc(useAwsmPastelPink, "Awsm Pastel Pink")
 
-nbSave
+var doc* = nb

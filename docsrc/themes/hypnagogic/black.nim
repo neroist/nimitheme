@@ -9,4 +9,4 @@ nbInit(useHypnagogicBlack)
 
 genThemeDoc(useHypnagogicBlack, "Hypnagogic Black")
 
-nbSave
+var doc* = nb

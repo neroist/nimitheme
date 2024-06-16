@@ -9,4 +9,4 @@ nbInit(useAwsmBigStone)
 
 genThemeDoc(useAwsmBigStone, "Awsm Big Stone")
 
-nbSave
+var doc* = nb

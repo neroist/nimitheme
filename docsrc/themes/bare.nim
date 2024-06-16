@@ -9,4 +9,4 @@ nbInit(useBare)
 
 genThemeDoc(useBare, "Bare")
 
-nbSave
+var doc* = nb

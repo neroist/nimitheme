@@ -9,4 +9,4 @@ nbInit(useAlmondLite)
 
 genThemeDoc(useAlmondLite, "Almond Lite")
 
-nbSave
+var doc* = nb

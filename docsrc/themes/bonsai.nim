@@ -9,4 +9,4 @@ nbInit(useBonsai)
 
 genThemeDoc(useBonsai, "Bonsai")
 
-nbSave
+var doc* = nb

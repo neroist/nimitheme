@@ -9,4 +9,4 @@ nbInit(useW3cUltramarine)
 
 genThemeDoc(useW3cUltramarine, "W3c Ultramarine")
 
-nbSave
+var doc* = nb

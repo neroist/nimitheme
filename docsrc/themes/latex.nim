@@ -9,4 +9,4 @@ nbInit(useLatexCSS)
 
 genThemeDoc(useLatexCSS, "Latex")
 
-nbSave
+var doc* = nb

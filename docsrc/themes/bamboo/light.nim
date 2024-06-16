@@ -9,4 +9,4 @@ nbInit(useBambooLight)
 
 genThemeDoc(useBambooLight, "Bamboo Light")
 
-nbSave
+var doc* = nb

@@ -9,4 +9,4 @@ nbInit(useSPCSSDark)
 
 genThemeDoc(useSPCSSDark, "SPCSS Dark")
 
-nbSave
+var doc* = nb

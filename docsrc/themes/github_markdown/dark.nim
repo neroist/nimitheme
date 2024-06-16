@@ -9,4 +9,4 @@ nbInit(useGithubMarkdownDark)
 
 genThemeDoc(useGithubMarkdownDark, "Github Markdown Dark")
 
-nbSave
+var doc* = nb

@@ -9,4 +9,4 @@ nbInit(useAwsmBlack)
 
 genThemeDoc(useAwsmBlack, "Awsm Black")
 
-nbSave
+var doc* = nb

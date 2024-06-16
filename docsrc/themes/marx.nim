@@ -9,4 +9,4 @@ nbInit(useMarx)
 
 genThemeDoc(useMarx, "Marx")
 
-nbSave
+var doc* = nb

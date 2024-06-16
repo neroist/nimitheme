@@ -9,4 +9,4 @@ nbInit(useAxist)
 
 genThemeDoc(useAxist, "Axist")
 
-nbSave
+var doc* = nb

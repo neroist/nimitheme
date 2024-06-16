@@ -9,4 +9,4 @@ nbInit(useMercury)
 
 genThemeDoc(useMercury, "Mercury")
 
-nbSave
+var doc* = nb

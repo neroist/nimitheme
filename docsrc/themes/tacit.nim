@@ -9,4 +9,4 @@ nbInit(useTacit)
 
 genThemeDoc(useTacit, "Tacit")
 
-nbSave
+var doc* = nb

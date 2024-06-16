@@ -9,4 +9,4 @@ nbInit(useConcreteLight)
 
 genThemeDoc(useConcreteLight, "Concrete Light")
 
-nbSave
+var doc* = nb

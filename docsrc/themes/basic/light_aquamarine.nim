@@ -9,4 +9,4 @@ nbInit(useBasicLightAquamarine)
 
 genThemeDoc(useBasicLightAquamarine, "Basic Light Aquamarine")
 
-nbSave
+var doc* = nb

@@ -9,4 +9,4 @@ nbInit(usePicoDark)
 
 genThemeDoc(usePicoDark, "Pico Dark")
 
-nbSave
+var doc* = nb

@@ -9,4 +9,4 @@ nbInit(useNimibujo)
 
 genThemeDoc(useNimibujo, "Nimibujo")
 
-nbSave
+var doc* = nb

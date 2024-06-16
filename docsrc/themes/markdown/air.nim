@@ -9,4 +9,4 @@ nbInit(useMarkdownAir)
 
 genThemeDoc(useMarkdownAir, "Markdown Air")
 
-nbSave
+var doc* = nb

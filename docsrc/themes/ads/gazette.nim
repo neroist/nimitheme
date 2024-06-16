@@ -9,4 +9,4 @@ nbInit(useAdsGazette)
 
 genThemeDoc(useAdsGazette, "Ads Gazette")
 
-nbSave
+var doc* = nb

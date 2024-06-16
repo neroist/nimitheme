@@ -9,4 +9,4 @@ nbInit(useAdsNotebook)
 
 genThemeDoc(useAdsNotebook, "Ads Notebook")
 
-nbSave
+var doc* = nb

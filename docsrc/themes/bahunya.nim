@@ -9,4 +9,4 @@ nbInit(useBahunya)
 
 genThemeDoc(useBahunya, "Bahunya")
 
-nbSave
+var doc* = nb

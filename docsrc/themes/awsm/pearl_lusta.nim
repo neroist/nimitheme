@@ -9,4 +9,4 @@ nbInit(useAwsmPearlLusta)
 
 genThemeDoc(useAwsmPearlLusta, "Awsm Pearl Lusta")
 
-nbSave
+var doc* = nb

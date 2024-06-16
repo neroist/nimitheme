@@ -15,4 +15,4 @@ In this theme set, there are the following themes:
   - [Splendor](splendor.html) (which you are viewing right now)
 """
 
-nbSave
+var doc* = nb

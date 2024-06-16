@@ -9,4 +9,4 @@ nbInit(useMarkdownModest)
 
 genThemeDoc(useMarkdownModest, "Markdown Modest")
 
-nbSave
+var doc* = nb

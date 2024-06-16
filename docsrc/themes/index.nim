@@ -52,4 +52,4 @@ nbText:
 
   text
 
-nbSave
+var doc* = nb

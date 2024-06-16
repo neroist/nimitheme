@@ -9,4 +9,4 @@ nbInit(useAwsmTasman)
 
 genThemeDoc(useAwsmTasman, "Awsm Tasman")
 
-nbSave
+var doc* = nb

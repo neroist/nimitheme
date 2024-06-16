@@ -9,4 +9,4 @@ nbInit(useClasslessFull)
 
 genThemeDoc(useClasslessFull, "Classless Full")
 
-nbSave
+var doc* = nb
