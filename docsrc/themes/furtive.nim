@@ -9,4 +9,4 @@ nbInit(useFurtive)
 
 genThemeDoc(useFurtive, "Furtive")
 
-var doc* = nb
+

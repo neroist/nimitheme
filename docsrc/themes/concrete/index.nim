@@ -16,4 +16,3 @@ You are viewing either of the two based on your
 preferred color theme.
 """
 
-var doc* = nb

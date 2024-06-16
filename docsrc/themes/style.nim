@@ -9,4 +9,4 @@ nbInit(useStyle)
 
 genThemeDoc(useStyle, "Style")
 
-var doc* = nb
+

@@ -13,4 +13,3 @@ In this theme set, there are the following themes:
   - [Lite](lite.html)
 """
 
-var doc* = nb

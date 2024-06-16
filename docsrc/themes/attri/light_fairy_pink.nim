@@ -9,4 +9,4 @@ nbInit(useAttriLightFairyPink)
 
 genThemeDoc(useAttriLightFairyPink, "Attri Light Fairy Pink")
 
-var doc* = nb
+

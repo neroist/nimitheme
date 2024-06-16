@@ -9,4 +9,4 @@ nbInit(useAlmond)
 
 genThemeDoc(useAlmond, "Almond")
 
-var doc* = nb
+

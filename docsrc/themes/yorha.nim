@@ -9,4 +9,4 @@ nbInit(useYoRHa)
 
 genThemeDoc(useYoRHa, "YoRHa")
 
-var doc* = nb
+

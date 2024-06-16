@@ -9,4 +9,4 @@ nbInit(useComet)
 
 genThemeDoc(useComet, "Comet")
 
-var doc* = nb
+

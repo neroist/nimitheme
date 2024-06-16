@@ -9,4 +9,4 @@ nbInit(useBambooDark)
 
 genThemeDoc(useBambooDark, "Bamboo Dark")
 
-var doc* = nb
+

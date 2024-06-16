@@ -9,4 +9,4 @@ nbInit(useDownstyler)
 
 genThemeDoc(useDownstyler, "Downstyler")
 
-var doc* = nb
+

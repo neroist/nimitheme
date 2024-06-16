@@ -18,4 +18,3 @@ In this theme set, there are the following themes:
   - [Vader](vader.html)
 """
 
-var doc* = nb

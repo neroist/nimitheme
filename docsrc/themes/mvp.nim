@@ -9,4 +9,4 @@ nbInit(useMvp)
 
 genThemeDoc(useMvp, "MVP")
 
-var doc* = nb
+

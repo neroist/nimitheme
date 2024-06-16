@@ -9,4 +9,4 @@ nbInit(useAwsmGondola)
 
 genThemeDoc(useAwsmGondola, "Awsm Gondola")
 
-var doc* = nb
+

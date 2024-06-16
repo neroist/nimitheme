@@ -14,4 +14,3 @@ In this theme set, there are the following themes:
 
 """
 
-var doc* = nb

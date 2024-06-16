@@ -9,4 +9,4 @@ nbInit(useMarkdownRetro)
 
 genThemeDoc(useMarkdownRetro, "Markdown Retro")
 
-var doc* = nb
+

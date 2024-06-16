@@ -9,4 +9,4 @@ nbInit(useW3cSteely)
 
 genThemeDoc(useW3cSteely, "W3c Steely")
 
-var doc* = nb
+

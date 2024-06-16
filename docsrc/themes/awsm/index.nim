@@ -19,4 +19,3 @@ In this theme set, there are the following themes:
   - [White](white.html)
 """
 
-var doc* = nb

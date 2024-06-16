@@ -9,4 +9,4 @@ nbInit(useMarkdownSplendor)
 
 genThemeDoc(useMarkdownSplendor, "Markdown Splendor")
 
-var doc* = nb
+

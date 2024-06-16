@@ -9,4 +9,4 @@ nbInit(useAwsmWhite)
 
 genThemeDoc(useAwsmWhite, "Awsm White")
 
-var doc* = nb
+

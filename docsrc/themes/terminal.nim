@@ -9,4 +9,4 @@ nbInit(useTerminal)
 
 genThemeDoc(useTerminal, "Terminal")
 
-var doc* = nb
+

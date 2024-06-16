@@ -9,4 +9,4 @@ nbInit(usePicoLight)
 
 genThemeDoc(usePicoLight, "Pico Light")
 
-var doc* = nb
+

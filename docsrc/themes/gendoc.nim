@@ -86,3 +86,5 @@ template genThemeDoc*(theme: proc (doc: var NbDoc), themeName: string) {.dirty.}
   nbText: """
   > Don't I look ***beautiful***?
   """
+
+  var doc* = nb

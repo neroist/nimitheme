@@ -15,4 +15,3 @@ In this theme set, there are the following themes:
   - [Tufte](tufte.html) (which you are viewing right now)
 """
 
-var doc* = nb

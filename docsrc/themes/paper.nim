@@ -9,4 +9,4 @@ nbInit(usePaper)
 
 genThemeDoc(usePaper, "Paper")
 
-var doc* = nb
+

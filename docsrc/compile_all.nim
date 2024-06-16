@@ -2,7 +2,7 @@ import std/macros
 import std/hashes
 import std/os
 
-macro importExportDocs(ignoreDirs: static openArray[string], nbDocVar: static string): untyped =
+macro importExportDocs(ignoreDirs: static openArray[string], ignoreFiles, nbDocVar: static string): untyped =
   ## Imports and export all files in toki/**
   ## 
   ## Adds all nimib documents to exported `allDocs` array
