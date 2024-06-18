@@ -1,3 +1,4 @@
+import std/strutils
 import std/macros
 import std/hashes
 import std/os
@@ -26,7 +27,9 @@ macro importExportDocs(ignoreDirs: static openArray[string], ignoreFiles: static
     self = currentSourcePath().splitFile().name
 
   for file in walkDirRec(currentSourceDir, relative=true):
-    let (fileDir, fileName, fileExt) = file.splitFile()
+    var
+      file = file.replace('\\', '/')
+      (fileDir, fileName, fileExt) = file.splitFile()
     
     # lets not import ourself now
     if fileName == self: continue
@@ -36,6 +39,8 @@ macro importExportDocs(ignoreDirs: static openArray[string], ignoreFiles: static
 
     # ignore files from `ignoreFiles`
     if file in ignoreFiles: continue
+    echo file
+
 
     case fileDir
     of "": # current directory
@@ -51,8 +56,8 @@ macro importExportDocs(ignoreDirs: static openArray[string], ignoreFiles: static
         path = ident fileDir & '/' & fileName
 
         # uses hashes for unique identifiers
-        # `fileDir` is prepended for debug purposes
-        alias = ident fileDir & $hash(file)
+        # `fileName` is prepended for debug purposes
+        alias = ident fileName & $hash(file)
 
       result[0].add infix(path, "as", alias)
       result[1].add alias
@@ -62,6 +67,6 @@ macro importExportDocs(ignoreDirs: static openArray[string], ignoreFiles: static
 
 importExportDocs(
   ignoreDirs  = [],
-  ignoreFiles = ["gendoc.nim"],
+  ignoreFiles = ["themes/gendoc.nim", "compile_all.nim"],
   nbDocVar    = "doc"
 )

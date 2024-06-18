@@ -3,7 +3,7 @@ import std/os
 import nimib/renders
 import nimib
 
-import ./themes/all
+import ./all_themes
 
 proc compile*(doc: var NbDoc): string =
   ## Compile NbDoc to its markdown/html instead of writing a file
@@ -29,4 +29,6 @@ proc writeDocs*(docs: var openArray[NbDoc], dir: string) =
   for doc in docs.mitems():
     writeDoc doc, dir
 
-writeDocs(allDocs, "docs")
+# homeDir is set to docs/ from nimib.toml
+# which is set as the cwd by nimib
+writeDocs(allDocs, ".")
