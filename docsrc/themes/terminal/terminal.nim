@@ -3,7 +3,7 @@ import std/strutils
 import nimitheme
 import nimib
 
-import ./gendoc
+import ../gendoc
 
 nbInit(useTerminal)
 
