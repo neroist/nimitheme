@@ -1,6 +1,6 @@
 import std/strutils
 
-import nimitheme/comet
+import nimitheme
 import nimib
 
 import ./gendoc
