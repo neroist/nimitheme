@@ -4,9 +4,9 @@ import nimib
 when defined(readme):
   nbInitMd
 else:
-  nbInit(useAwsmBigStone)
+  nbInit(useTerminal)
 
-nb.context["path_to_root"] = "."
+nb.pathToRoot = "."
 nb.title = "Nimitheme Docs"
 
 nbText: """
@@ -46,7 +46,7 @@ Either pass the theme into `nbInit` like so:
 """
 
 nbCodeSkip:
-  nbInit(useAwsmBigStone)
+  nbInit(useTerminal)
 
 nbText: """
 or call the function directly:
@@ -55,7 +55,7 @@ or call the function directly:
 nbCodeSkip: 
   nbInit
 
-  nb.useAwsmBigStone()
+  nb.useTerminal()
 
 
 nbText: """
@@ -115,6 +115,7 @@ nbCodeSkip:
     "secondary-color": "pink"
   })
 
+# TODO: Add section explaining how to set favicon & nimitheme/doc.nim
 # TODO: Add section explaining how to create themes
 
 nbText: """
@@ -128,4 +129,8 @@ This project is licensed under the MIT license.
 when defined(readme):
   nb.filename = "../README.md"
 
+var doc* = nb
+
+when isMainModule:
+  nbSave
 
