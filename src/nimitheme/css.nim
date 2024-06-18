@@ -4,7 +4,7 @@ import nimib
 
 proc addCss*(doc: var NbDoc; style: string) =
   doc.context["nb_style"] = doc.context["nb_style"].vString &
-    '\n' & "<style>\n" & style & "\n</style>"
+                            '\n' & "<style>\n" & style & "\n</style>"
 
 proc getCssStr*(variable, value: string): string = 
   """
