@@ -53,10 +53,9 @@ const
 </section>"""
   terminalShowSourceButton* = """<button class="nb-small btn btn-small" id="show" onclick="toggleSourceDisplay()">Show Source</button>"""
 
-template useTerminalImpl*(doc: var NbDoc) =
-  useStyle terminal
+proc useTerminalImpl*(doc: var NbDoc, useDarkMode: static bool = false) =
+  useStyle terminal, useDarkMode = useDarkMode
   
-
   doc.partials["document"] = terminalDocument
   doc.partials["main"] = terminalMain
   doc.partials["header"] = terminalHeader
@@ -68,7 +67,7 @@ proc useTerminal*(doc: var NbDoc) =
   useTerminalImpl(doc)
 
 proc useTerminalDark*(doc: var NbDoc) =
-  useTerminalImpl(doc)
+  useTerminalImpl(doc, useDarkMode = true)
 
   doc.setCssVars({
     "global-font-size": "15px",
@@ -102,7 +101,7 @@ proc useTerminalSans*(doc: var NbDoc) =
   })
 
 proc useTerminalSansDark*(doc: var NbDoc) =
-  useTerminalImpl(doc)
+  useTerminalImpl(doc, useDarkMode = true)
 
   doc.setCssVars({
     "global-font-size": "15px",
