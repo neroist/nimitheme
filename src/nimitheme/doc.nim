@@ -42,6 +42,29 @@ proc `nbStyle=`*(doc: var NbDoc, css: string) = doc.context["nb_style"] = css
 proc `sourceSection=`*(doc: var NbDoc, html: string) = doc.partials["source_section"] = html
 proc `showSourceScript=`*(doc: var NbDoc, html: string) = doc.partials["show_source_script"] = html
 
+proc head*(doc: var NbDoc): string = doc.partials["head"]
+proc docuement*(doc: var NbDoc): string = doc.partials["document"]
+proc main*(doc: var NbDoc): string = doc.partials["main"]
+proc header*(doc: var NbDoc): string = doc.partials["header"]
+proc headerLeft*(doc: var NbDoc): string = doc.partials["header_left"]
+proc headerCenter*(doc: var NbDoc): string = doc.partials["header_center"]
+proc headerRight*(doc: var NbDoc): string = doc.partials["header_right"]
+proc pathToRoot*(doc: var NbDoc): string = doc.context["path_to_root"].vString
+proc pathToHere*(doc: var NbDoc): string = doc.context["path_to_here"].vString
+proc githubLogo*(doc: var NbDoc): string = doc.context["github_remote_url"].vString
+proc footer*(doc: var NbDoc): string = doc.partials["footer"]
+proc footerLeft*(doc: var NbDoc): string = doc.partials["footer_left"]
+proc footerCenter*(doc: var NbDoc): string = doc.partials["footer_center"]
+proc footerRight*(doc: var NbDoc): string = doc.partials["footer_right"]
+proc githubRemoteUrl*(doc: var NbDoc): string = doc.context["github_logo"].vString
+proc version*(doc: var NbDoc): string = doc.context["version"].vString
+proc stylesheet*(doc: var NbDoc): string = doc.context["stylesheet"].vString
+proc highlight*(doc: var NbDoc): string = doc.context["highlight"].vString
+proc highlightJs*(doc: var NbDoc): string = doc.context["highlightJs"].vString
+proc nbStyle*(doc: var NbDoc): string = doc.context["nb_style"].vString
+proc sourceSection*(doc: var NbDoc): string = doc.partials["source_section"]
+proc showSourceScript*(doc: var NbDoc): string = doc.partials["show_source_script"]
+
 proc noSourceSection*(doc: var NbDoc) =
   doc.context["no_source"] = " "
 
