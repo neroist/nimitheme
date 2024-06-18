@@ -9,14 +9,14 @@ type
 
 proc `$`(map: HtmlAttributes): string =
   for i in map:
-    result.add fmt"{i[0]}={i[1]}"
+    result.add fmt "{i[0]}=\"{i[1]}\""
 
 # if `title=` is removed
 when false:
   proc `title=`*(doc: var NbDoc, text: string) =
     doc.context["title"] = text
 
-proc `favicon=`*(doc: var NbDoc, url: string, attributes: HtmlAttributes) =
+proc `favicon=`*(doc: var NbDoc, url: string, attributes: HtmlAttributes = {:}) =
   doc.context["favicon"] = fmt"""<link rel="icon" {attributes} href="{url}">"""
 
 proc `head=`*(doc: var NbDoc, html: string) = doc.partials["head"] = html
