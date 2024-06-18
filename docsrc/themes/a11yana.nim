@@ -89,4 +89,5 @@ nbText: """
 > Don't I look ***beautiful***?
 """
 
+var doc* = nb
 

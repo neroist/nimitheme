@@ -14,4 +14,4 @@ In this theme set, there are the following themes:
   - [Retro](retro.html)
   - [Splendor](splendor.html) (which you are viewing right now)
 """
-
+var doc* = nb

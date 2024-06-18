@@ -1,62 +1,32 @@
-import std/macros
-import std/hashes
 import std/os
 
-macro importExportDocs(ignoreDirs: static openArray[string], ignoreFiles, nbDocVar: static string): untyped =
-  ## Imports and export all files in toki/**
-  ## 
-  ## Adds all nimib documents to exported `allDocs` array
-  ## 
-  ## :ignoreDirs: Which directories to ignore, relative to `toki/`
-  ## :nbDocVar:   The name of the exported NbDoc across files
+import nimib/renders
+import nimib
+
+import ./themes/all
+
+proc compile*(doc: var NbDoc): string =
+  ## Compile NbDoc to its markdown/html instead of writing a file
   
-  result = newStmtList(
-    # imports and exports
-    newNimNode(nnkImportStmt),
-    newNimNode(nnkExportStmt),
+  doc.nbCollectAllNbJs()
 
-    # exported `allDocs` array
-    newVarStmt(postfix(ident"allDocs", "*"), newNimNode(nnkBracket))
-  )
+  doc.context.searchDirs(doc.templateDirs)
+  doc.context.searchTable(doc.partials)
 
-  const
-    # its shorter for me to set this to a variable since i use inlay hints
-    currentSourceDir = currentSourcePath().parentDir
-    self = currentSourcePath().splitFile().name
+  doc.render()
 
-  for file in walkDirRec(currentSourceDir, relative=true):
-    let (fileDir, fileName, fileExt) = file.splitFile()
-    
-    # lets not import ourself now
-    if fileName == self: continue
+proc writeDoc*(doc: var NbDoc, dir: string) =
+  let
+    dest = (dir / doc.filename)
+    destDir = dest.parentDir
 
-    # must be all nim files
-    if fileExt != ".nim": continue
+  if not dirExists(destDir):
+    createDir(destDir)
 
-    case fileDir
-    of "": # current directory
-      result[0].add ident(fileName)
-      result[1].add ident(fileName)
+  writeFile(dest, doc.compile())
 
-      # access var section array
-      # nnkVarSection -> nnkIdentDefs -> nnkBracket (array)
-      result[2][0][^1].add newDotExpr(ident(fileName), ident nbDocVar)
-    elif fileDir in ignoreDirs: discard
-    else:
-      let
-        path = ident fileDir & '/' & fileName
+proc writeDocs*(docs: var openArray[NbDoc], dir: string) =
+  for doc in docs.mitems():
+    writeDoc doc, dir
 
-        # uses hashes for unique identifiers
-        # `fileDir` is prepended for debug purposes
-        alias = ident fileDir & $hash(file)
-
-      result[0].add infix(path, "as", alias)
-      result[1].add alias
-
-      # ditto, same here
-      result[2][0][^1].add newDotExpr(alias, ident nbDocVar)
-
-importExportDocs(
-  ignoreDirs = ["common"],
-  nbDocVar   = "doc"
-)
+writeDocs(allDocs, "docs")

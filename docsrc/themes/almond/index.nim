@@ -12,4 +12,4 @@ In this theme set, there are the following themes:
   - [Almond](almond.html) (which you are viewing right now)
   - [Lite](lite.html)
 """
-
+var doc* = nb
