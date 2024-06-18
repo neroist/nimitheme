@@ -4,9 +4,10 @@ import nimib/themes
 import nimib
 
 import ../utils
+import ../css
 
 const
-  terminal* = """<link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />"""
+  terminal* = """<link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css" />"""
   terminalDocument* = """
 <!DOCTYPE html>
 <html lang="en-us">
@@ -52,7 +53,7 @@ const
 </section>"""
   terminalShowSourceButton* = """<button class="nb-small btn btn-small" id="show" onclick="toggleSourceDisplay()">Show Source</button>"""
 
-proc useTerminal*(doc: var NbDoc) = 
+template useTerminalImpl*(doc: var NbDoc) =
   useStyle terminal
   
 
@@ -62,3 +63,62 @@ proc useTerminal*(doc: var NbDoc) =
   doc.partials["footer"] = terminalFooter
   doc.partials["source_section"] = optOut(terminalSourceSection, "no_source")
   doc.partials["footer_right"] = optOut(terminalShowSourceButton, "no_source")
+
+proc useTerminal*(doc: var NbDoc) =
+  useTerminalImpl(doc)
+
+proc useTerminalDark*(doc: var NbDoc) =
+  useTerminalImpl(doc)
+
+  doc.setCssVars({
+    "global-font-size": "15px",
+    "global-line-height": "1.4em",
+    "global-space": "10px",
+    "font-stack": "Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif",
+    "mono-font-stack": "Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif",
+    "background-color": "#222225",
+    "page-width": "60em",
+    "font-color": "#e8e9ed",
+    "invert-font-color": "#222225",
+    "secondary-color": "#a3abba",
+    "tertiary-color": "#a3abba",
+    "primary-color": "#62c4ff",
+    "error-color": "#ff3c74",
+    "progress-bar-background": "#3f3f44",
+    "progress-bar-fill": "#62c4ff",
+    "code-bg-color": "#3f3f44",
+    "input-style": "solid",
+    "display-h1-decoration": "none"
+  })
+
+proc useTerminalSans*(doc: var NbDoc) =
+  useTerminalImpl(doc)
+  
+  doc.setCssVars({
+    "global-font-size": "15px",
+    "global-line-height": "1.4em",
+    "font-stack": "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol",
+    "input-style": "solid"
+  })
+
+proc useTerminalSansDark*(doc: var NbDoc) =
+  useTerminalImpl(doc)
+
+  doc.setCssVars({
+    "global-font-size": "15px",
+    "global-line-height": "1.4em",
+    "font-stack": "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol",
+    "background-color": "#222225",
+    "page-width": "60em",
+    "font-color": "#e8e9ed",
+    "invert-font-color": "#222225",
+    "secondary-color": "#a3abba",
+    "tertiary-color": "#a3abba",
+    "primary-color": "#62c4ff",
+    "error-color": "#ff3c74",
+    "progress-bar-background": "#3f3f44",
+    "progress-bar-fill": "#62c4ff",
+    "code-bg-color": "#3f3f44",
+    "input-style": "solid",
+    "display-h1-decoration": "none"
+  })
