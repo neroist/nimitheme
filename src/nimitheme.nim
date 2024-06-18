@@ -40,8 +40,10 @@ import ./nimitheme/themes/ads
 import ./nimitheme/themes/w3c
 import ./nimitheme/themes/w3
 import ./nimitheme/css
+import ./nimitheme/doc
 
 export w3
+export doc
 export css
 export w3c
 export ads
