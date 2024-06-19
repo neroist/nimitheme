@@ -3,7 +3,7 @@ import std/os
 # Package
 
 version       = "0.4.0"
-author        = "Jasmine"
+author        = "niko"
 description   = "Make nimib look beautiful with nimitheme"
 license       = "MIT"
 srcDir        = "src"
