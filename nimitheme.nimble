@@ -43,4 +43,4 @@ task docs, "Build theme docs for nimitheme":
 # Dependencies
 
 requires "nim >= 1.4.0"
-requires "nimib"
+requires "nimib#head"
