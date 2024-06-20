@@ -7,6 +7,7 @@ else:
   nbInit(useTerminal)
 
 nb.pathToRoot = "."
+nb.favicon = faviconPaint
 nb.title = "Nimitheme Docs"
 
 nbText: """
