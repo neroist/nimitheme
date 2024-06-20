@@ -1,6 +1,8 @@
 import nimitheme
 import nimib
 
+import ./common
+
 when defined(readme):
   nbInitMd
 else:
