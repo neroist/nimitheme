@@ -24,30 +24,24 @@ const
 
 proc useSakura*(doc: var NbDoc) = 
   useStyle sakura, sakuraStyle
-  
 
 proc useSakuraDarkSolarized*(doc: var NbDoc) = 
   useStyle sakuraDarkSolarized, sakuraStyle, useDarkMode = true
   doc.highlight = solarizedDark
-  
 
 proc useSakuraDark*(doc: var NbDoc) = 
   useStyle sakuraDark, sakuraStyle, useDarkMode = true
+  doc.highlight = equilibruimGreyDark
   
-
 proc useSakuraEarthly*(doc: var NbDoc) = 
   useStyle sakuraEarthly, sakuraStyle
-  
 
 proc useSakuraInk*(doc: var NbDoc) = 
   useStyle sakuraInk, sakuraStyle
-  
 
 proc useSakuraPink*(doc: var NbDoc) = 
   useStyle sakuraPink, sakuraStyle
-  doc.highlight = sagelight
-  
+  doc.highlight = rosPineMoon
 
 proc useSakuraVader*(doc: var NbDoc) = 
   useStyle sakuraVader, sakuraStyle, useDarkMode = true
-  
