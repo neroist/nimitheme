@@ -30,7 +30,7 @@ const
 """
   adsNoteBookStyle* = """
   <style>
-    body { margin-right: 10% }
+    body { margin-right: 10%; margin-left: 10%; }
     code { padding: 0px 3px; }
   </style>  
 """
