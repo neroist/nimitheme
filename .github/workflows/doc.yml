@@ -2,11 +2,7 @@ name: generate-doc
 run-name: Generate documentation
 
 on:  
-  push:
-    tags:
-      - '*'
-
-  workflow_dispatch:
+  [push, workflow_dispatch]
 
 jobs:
   generate-doc:
