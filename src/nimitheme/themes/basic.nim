@@ -5,7 +5,7 @@ import std/strutils
 import nimib/themes
 import nimib
 
-import ./highlight_js
+import ../highlight_js
 import ../utils
 
 const

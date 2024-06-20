@@ -1,5 +1,4 @@
 import ./nimitheme/themes/github_markdown
-import ./nimitheme/themes/highlight_js
 import ./nimitheme/themes/downstyler
 import ./nimitheme/themes/hypnagogic
 import ./nimitheme/themes/classless
@@ -28,6 +27,7 @@ import ./nimitheme/themes/yorha
 import ./nimitheme/themes/paper
 import ./nimitheme/themes/comet
 import ./nimitheme/themes/spcss
+import ./nimitheme/highlight_js
 import ./nimitheme/themes/awsm
 import ./nimitheme/themes/marx
 import ./nimitheme/themes/pico
