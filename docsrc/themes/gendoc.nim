@@ -32,7 +32,6 @@ template genThemeDoc*(theme: proc (doc: var NbDoc), themeName: string) {.dirty.}
 
   nbCodeSkip:
     nbInit
-
     nb.theme()
 
   nbText: """
@@ -92,3 +91,6 @@ template genThemeDoc*(theme: proc (doc: var NbDoc), themeName: string) {.dirty.}
   """
 
   var doc* = nb
+
+  when isMainModule:
+    nbSave

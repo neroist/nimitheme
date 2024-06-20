@@ -91,3 +91,5 @@ nbText: """
 
 var doc* = nb
 
+when isMainModule:
+  nbSave
