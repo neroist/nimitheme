@@ -52,7 +52,7 @@ const
 <pre><code class="nohighlight nim hljs">{{{source_highlighted}}}</code></pre>
 </section>"""
   terminalShowSourceButton* = """<button class="nb-small btn btn-small" id="show" onclick="toggleSourceDisplay()">Show Source</button>"""
-  terminalStyle* = """blockquote p { margin-bottom: 0; } """ 
+  terminalStyle* = """<style>blockquote p { margin-bottom: 0; }</style>""" 
 
 proc useTerminalImpl*(doc: var NbDoc, useDarkMode: static bool = false) =
   useStyle terminal, terminalStyle, useDarkMode = useDarkMode
