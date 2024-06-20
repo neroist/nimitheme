@@ -54,13 +54,13 @@ template genThemeDoc*(theme: proc (doc: var NbDoc), themeName: string) {.dirty.}
   nbText: """
   ## Images
 
-  Here's a complementary free image for you:
+  Here's a complementary, free image for you:
   """
 
   nbImage(
     "https://picsum.photos/600",
-    "",
-    "random image"
+    "Random image from picsum.photos",
+    ""
   )
 
   nbText: """
