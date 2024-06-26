@@ -60,6 +60,9 @@ nbCodeSkip:
 
   nb.useTerminal()
 
+nbText: """
+Currently there are approx. ~85 themes supported.
+"""
 
 nbText: """
 ### Dark Reader Support
