@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Nimitheme Docs</title>
+  <link rel="icon"  href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🎨</text></svg>">
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="nimib 0.3.11" name="generator">
+  <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css" />
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/pietroppeter/nimib/assets/atom-one-light.css'>
+    <script src="https://cdn.jsdelivr.net/gh/pietroppeter/nimib@main/assets/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
+  <style>
+.nb-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nb-small {
+  font-size: 0.8rem;
+}
+button.nb-small {
+  float: right;
+  padding: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+section#source {
+  display:none
+}
+pre > code {
+  font-size: 1.2em;
+}
+.nb-output {
+  line-height: 1.15;
+}
+figure {
+  margin: 2rem 0;
+}
+figcaption {
+  text-align: center;
+}
+  
+</style>
+<style>blockquote p { margin-bottom: 0; }</style>
+  
+</head>
+<body class="terminal">
+<header class="container terminal-nav">
+<div class="nb-box terminal-menu">
+  <span><a href=".">🏡</a></span>
+  <span><code>index.nim</code></span>
+  <span><a href="https://github.com/neroist/nimitheme"><svg aria-hidden="true" width="1.2em" height="1.2em" style="vertical-align: middle;" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59c.4.07.55-.17.55-.38c0-.19-.01-.82-.01-1.49c-2.01.37-2.53-.49-2.69-.94c-.09-.23-.48-.94-.82-1.13c-.28-.15-.68-.52-.01-.53c.63-.01 1.08.58 1.23.82c.72 1.21 1.87.87 2.33.66c.07-.52.28-.87.51-1.07c-1.78-.2-3.64-.89-3.64-3.95c0-.87.31-1.59.82-2.15c-.08-.2-.36-1.02.08-2.12c0 0 .67-.21 2.2.82c.64-.18 1.32-.27 2-.27c.68 0 1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82c.44 1.1.16 1.92.08 2.12c.51.56.82 1.27.82 2.15c0 3.07-1.87 3.75-3.65 3.95c.29.25.54.73.54 1.48c0 1.07-.01 1.93-.01 2.2c0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="#000"></path></svg></a></span>
+</div>
+<hr>
+</header><main class="container">
+<h1>nimitheme</h1>
+<figure>
+<img src="https://raw.githubusercontent.com/neroist/nimitheme/main/docs/images/nimitheme.png" alt="Nimitheme presentation image">
+<figcaption></figcaption>
+</figure>
+<blockquote>
+<p><em>Make nimib look <strong>beautiful</strong> with nimitheme</em></p>
+</blockquote>
+<p>Nimitheme is a Nimble package that provides additional themes for
+<a href="https://github.com/pietroppeter/nimib">nimib</a>.</p>
+<p>You can view the index of all the themes available in Nimitheme here:
+<a href="https://neroist.github.io/nimitheme/themes">https://neroist.github.io/nimitheme/themes</a>.</p>
+<p>In addition, support for
+<a href="https://github.com/darkreader/darkreader">Dark Reader</a> and
+<a href="https://highlightjs.org/">highlight.js</a> are available.</p>
+<h2>Installation</h2>
+<p>Execute this command in a terminal or shell:</p>
+<pre><code class="language-sh">nimble install nimitheme
+</code></pre>
+<h2>Usage</h2>
+<p>Either pass the theme into <code>nbInit</code> like so:</p>
+<pre class="nohighlight hljs nim">nbInit(useTerminal)</pre>
+<p>or call the function directly:</p>
+<pre class="nohighlight hljs nim">nbInit
+nb.useTerminal()</pre>
+<p>Currently there are approx. ~85 themes supported.</p>
+<h3>Dark Reader Support</h3>
+<p>You can enable Dark Reader in your nimib document by calling <code>useDarkReader</code>
+on the <code>nb</code> variable injected by <code>nbInit</code>, like so:</p>
+<pre class="nohighlight hljs nim">nb.useDarkReader()</pre>
+<p>In addition, you can also <em>disable</em> Dark Reader via the <code>disableDarkReader</code>
+proc. You can call it similarly to how you called the last function.</p>
+<pre class="nohighlight hljs nim">nb.disableDarkReader()</pre>
+<h3>Highlight.js support</h3>
+<p>You can also further stylize your code via setting a specific highlight.js
+code theme (outside of Android Dark and Atom One light). You can do this by
+using the <code>highlight=</code> template. For example, you can do something like this:</p>
+<pre class="nohighlight hljs nim">nb.highlight = materialPalenight</pre>
+<p>to set the highlight.js theme your nimib document uses.</p>
+<p><em><strong>All</strong></em> highlight.js themes are available (see
+<a href="https://github.com/neroist/nimitheme/blob/main/src/nimitheme/highlight_js.nim"><code>highlight_js.nim</code></a>).</p>
+<p>For themes that have the same name as a base16 theme, the base16 theme's
+name is postfixed with <code>_base16</code>.</p>
+<h3>Edit CSS Variables</h3>
+<p>Many CSS libraries that Nimitheme uses allow you to customize the style of
+your document using CSS variables the user can manually set. Nimitheme allows
+you to set such variables via the <code>setCssVar</code> template. For example, you can
+do stuff like this:</p>
+<pre class="nohighlight hljs nim">nbInit(useTerminal)
+nb.setCssVar(<span class="hljs-string">&quot;global-font-size&quot;</span>, <span class="hljs-string">&quot;16px&quot;</span>)
+nb.setCssVar({<span class="hljs-string">&quot;primary-color&quot;</span>: <span class="hljs-string">&quot;purple&quot;</span>, <span class="hljs-string">&quot;secondary-color&quot;</span>: <span class="hljs-string">&quot;pink&quot;</span>})</pre>
+<h2>License</h2>
+<p>This project is licensed under the MIT license.</p>
+<h6>Made with Nim with ❤️</h6>
+</main>
+<footer class="container terminal-nav">
+<div class="nb-box terminal-menu">
+  <div class="terminal-logo">
+    <span class="logo terminal-prompt"><span class="nb-small">made with <a href="https://pietroppeter.github.io/nimib/">nimib 🐳</a></span></span>
+  </div>
+  <span></span>
+  <span><button class="nb-small btn btn-small" id="show" onclick="toggleSourceDisplay()">Show Source</button></span>
+</div>
+</footer>
+<section id="source" class="container">
+<pre><code class="nohighlight nim hljs"><span class="hljs-keyword">import</span> nimitheme
+<span class="hljs-keyword">import</span> nimib
+
+<span class="hljs-keyword">import</span> ./common
+
+<span class="hljs-keyword">when</span> <span class="hljs-keyword">defined</span>(readme):
+  nbInitMd
+<span class="hljs-keyword">else</span>:
+  nbInit(useTerminal)
+
+nb.pathToRoot = <span class="hljs-string">&quot;.&quot;</span>
+nb.favicon = faviconPaint
+nb.title = <span class="hljs-string">&quot;Nimitheme Docs&quot;</span>
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+# nimitheme
+&quot;&quot;&quot;</span>
+
+nbImage(
+  <span class="hljs-string">&quot;https://raw.githubusercontent.com/neroist/nimitheme/main/docs/images/nimitheme.png&quot;</span>, 
+  <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment"># Caption is the blockquote below</span>
+  <span class="hljs-string">&quot;Nimitheme presentation image&quot;</span>
+)
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+&gt; *Make nimib look **beautiful** with nimitheme*
+
+Nimitheme is a Nimble package that provides additional themes for
+[nimib](https://github.com/pietroppeter/nimib).
+
+You can view the index of all the themes available in Nimitheme here:
+&lt;https://neroist.github.io/nimitheme/themes&gt;.
+
+In addition, support for 
+[Dark Reader](https://github.com/darkreader/darkreader) and
+[highlight.js](https://highlightjs.org/) are available.
+
+## Installation
+
+Execute this command in a terminal or shell:
+
+```sh
+nimble install nimitheme
+```
+
+## Usage
+
+Either pass the theme into `nbInit` like so:
+&quot;&quot;&quot;</span>
+
+nbCodeSkip:
+  nbInit(useTerminal)
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+or call the function directly:
+&quot;&quot;&quot;</span>
+
+nbCodeSkip: 
+  nbInit
+
+  nb.useTerminal()
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+Currently there are approx. ~85 themes supported.
+&quot;&quot;&quot;</span>
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+### Dark Reader Support
+
+You can enable Dark Reader in your nimib document by calling `useDarkReader`
+on the `nb` variable injected by `nbInit`, like so:
+&quot;&quot;&quot;</span>
+
+nbCodeSkip:
+  nb.useDarkReader()
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+In addition, you can also *disable* Dark Reader via the `disableDarkReader`
+proc. You can call it similarly to how you called the last function.
+&quot;&quot;&quot;</span>
+
+nbCodeSkip:
+  nb.disableDarkReader()
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+### Highlight.js support
+
+You can also further stylize your code via setting a specific highlight.js
+code theme (outside of Android Dark and Atom One light). You can do this by
+using the `highlight=` template. For example, you can do something like this:
+&quot;&quot;&quot;</span>
+
+nbCodeSkip: 
+  nb.highlight = materialPalenight
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+to set the highlight.js theme your nimib document uses.
+
+***All*** highlight.js themes are available (see
+[`highlight_js.nim`](https://github.com/neroist/nimitheme/blob/main/src/nimitheme/highlight_js.nim)).
+
+For themes that have the same name as a base16 theme, the base16 theme's
+name is postfixed with `_base16`.
+
+### Edit CSS Variables
+
+Many CSS libraries that Nimitheme uses allow you to customize the style of
+your document using CSS variables the user can manually set. Nimitheme allows
+you to set such variables via the `setCssVar` template. For example, you can
+do stuff like this:
+&quot;&quot;&quot;</span>
+
+nbCodeSkip:
+  nbInit(useTerminal)
+
+  nb.setCssVar(<span class="hljs-string">&quot;global-font-size&quot;</span>, <span class="hljs-string">&quot;16px&quot;</span>)
+
+  <span class="hljs-comment"># Set multiple variables at once</span>
+  nb.setCssVar({
+    <span class="hljs-string">&quot;primary-color&quot;</span>: <span class="hljs-string">&quot;purple&quot;</span>,
+    <span class="hljs-string">&quot;secondary-color&quot;</span>: <span class="hljs-string">&quot;pink&quot;</span>
+  })
+
+<span class="hljs-comment"># TODO: Add section explaining how to set favicon &amp; nimitheme/doc.nim</span>
+<span class="hljs-comment"># TODO: Add section explaining how to create themes</span>
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+## License
+
+This project is licensed under the MIT license.
+
+###### Made with Nim with ❤️
+&quot;&quot;&quot;</span>
+
+<span class="hljs-keyword">when</span> <span class="hljs-keyword">defined</span>(readme):
+  nb.filename = <span class="hljs-string">&quot;../README.md&quot;</span>
+
+<span class="hljs-keyword">var</span> doc* = nb
+
+<span class="hljs-keyword">when</span> isMainModule:
+  nbSave
+
+</code></pre>
+</section><script>
+function toggleSourceDisplay() {
+  var btn = document.getElementById("show")
+  var source = document.getElementById("source");
+  if (btn.innerHTML=="Show Source") {
+    btn.innerHTML = "Hide Source";
+    source.style.display = "block";
+  } else {
+    btn.innerHTML = "Show Source";
+    source.style.display = "none";
+  }
+}
+</script></body>
+</html>
