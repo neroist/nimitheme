@@ -40,6 +40,7 @@ proc `stylesheet=`*(doc: var NbDoc, html: string) = doc.context["stylesheet"] = 
 proc `highlight=`*(doc: var NbDoc, html: string) = doc.context["highlight"] = html
 proc `highlightJs=`*(doc: var NbDoc, html: string) = doc.context["highlightJs"] = html
 proc `nbStyle=`*(doc: var NbDoc, css: string) = doc.context["nb_style"] = css
+proc `latex=`*(doc: var NbDoc, html: string) = doc.context["latex"] = html
 proc `sourceSection=`*(doc: var NbDoc, html: string) = doc.partials["source_section"] = html
 proc `showSourceScript=`*(doc: var NbDoc, html: string) = doc.partials["show_source_script"] = html
 
@@ -64,6 +65,7 @@ proc stylesheet*(doc: var NbDoc): string = doc.context["stylesheet"].vString
 proc highlight*(doc: var NbDoc): string = doc.context["highlight"].vString
 proc highlightJs*(doc: var NbDoc): string = doc.context["highlightJs"].vString
 proc nbStyle*(doc: var NbDoc): string = doc.context["nb_style"].vString
+proc latex*(doc: var NbDoc): string = doc.context["latex"].vString
 proc sourceSection*(doc: var NbDoc): string = doc.partials["source_section"]
 proc showSourceScript*(doc: var NbDoc): string = doc.partials["show_source_script"]
 
