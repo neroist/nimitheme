@@ -29,6 +29,7 @@ proc `headerRight=`*(doc: var NbDoc, html: string) = doc.partials["header_right"
 proc `pathToRoot=`*(doc: var NbDoc, url: string) = doc.context["path_to_root"] = url
 proc `pathToHere=`*(doc: var NbDoc, url: string) = doc.context["path_to_here"] = url
 proc `githubLogo=`*(doc: var NbDoc, html: string) = doc.context["github_remote_url"] = html
+proc `headOther=`*(doc: var NbDoc, html: string) = doc.partials["head_other"] = html
 proc `footer=`*(doc: var NbDoc, html: string) = doc.partials["footer"] = html
 proc `footerLeft=`*(doc: var NbDoc, html: string) = doc.partials["footer_left"] = html
 proc `footerCenter=`*(doc: var NbDoc, html: string) = doc.partials["footer_center"] = html
@@ -52,6 +53,7 @@ proc headerRight*(doc: var NbDoc): string = doc.partials["header_right"]
 proc pathToRoot*(doc: var NbDoc): string = doc.context["path_to_root"].vString
 proc pathToHere*(doc: var NbDoc): string = doc.context["path_to_here"].vString
 proc githubLogo*(doc: var NbDoc): string = doc.context["github_remote_url"].vString
+proc headOther*(doc: var NbDoc): string = doc.partials.getOrDefault("head_other")
 proc footer*(doc: var NbDoc): string = doc.partials["footer"]
 proc footerLeft*(doc: var NbDoc): string = doc.partials["footer_left"]
 proc footerCenter*(doc: var NbDoc): string = doc.partials["footer_center"]
